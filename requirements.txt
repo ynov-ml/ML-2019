@@ -1,0 +1,15 @@
+ipython
+jinja2
+jsonschema
+mahotas
+matplotlib
+notebook
+numpy
+pandas
+pyzmq
+scikit-image
+scikit-learn
+scipy
+seaborn
+statsmodels
+tornado
