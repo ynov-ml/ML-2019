@@ -4,9 +4,9 @@ Bienvenu au Machine Learning à Ynov !
 
 Ce cours comportera un mixe de cours magistraux, de travaux dirigés en
 présentielle, et de travaux et d'apprentissage par projet en
-distancielle.  Les proportions seront établie entre le professeur et
-les étudiants en vue de la capacité des étudiants à avancer dans le
-sujet.
+distancielle.  Les proportions seront établies entre le professeur et
+les étudiants, surtout en vue de la capacité des étudiants à avancer
+dans le sujet.
 
 Ce document vous offre un aperçu préliminaire des pré-requis que vous
 devez maîtriser avant le début du cours le 15 mars.  Ce sera mis à
@@ -30,7 +30,7 @@ votre niveau et progrès dans ces sujets.  Cela nous permettra
 ## Git
 
 Impératif : add, commit, push, pull, diff, log, status, merge,
-checkout, branch, ainsi que les options les plus communes de chaqu'un.
+checkout, branch, ainsi que les options les plus communes.
 
 Recommandé : rebase (et rebase -i), mv, reset, cherry et cherry-pick,
 ainsi que les options moins connues.
@@ -45,7 +45,7 @@ Vous n'êtes pas obligé d'être pro en python, mais une connaissance de
 base -- comment déclarer des fonctions, calculer les choses simples,
 interagir avec les listes, les dicts, se servir des list et dict
 comprehensions.  En plus, vous avez installé python et une poignée de
-libraries sur votre (vos) ordinateur(s).  Voir outils et support,
+libraries sur votre (vos) ordinateur(s).  Voir _outils et support_,
 ci-bas.
 
 
@@ -53,8 +53,8 @@ ci-bas.
 
 En algèbre linéaire, vous n'avez pas peur des vecteurs et matrices.
 Vous comprenez des opérations de bases : addition et multiplication.
-Vous comprenez qu'une matrice représente une transformation en termes
-d'une base donnée.
+Vous comprenez qu'une matrice représente une transformation linéaire
+en termes d'une base donnée.
 
 En probabilité, vous comprenez les conceptes de dépendances et
 indépendances, la probabilité conditionnelle, et, idéallement, le
