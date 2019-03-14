@@ -1,0 +1,398 @@
+\input ../notes-header.tex
+
+\begin{document}
+
+\notetitle{J01}{Introduction}
+
+Why ML?
+\begin{itemize}
+\item Playing with blocks vs doing maths
+\item Sometimes we know how to solve problems (e.g., sorting)
+\item Sometimes we don't (e.g., recognise a cat, read handwriting on envelopes)
+\item Not magic
+\end{itemize}
+
+What is ML?
+\begin{enumerate}
+\item Some algorithms we know how to write
+  \begin{enumerate}
+  \item Sort numbers
+  \item Fly a plane
+  \end{enumerate}
+\item Some algorithms we don't know how to write (example: drive a car)
+  \begin{enumerate}
+  \item Drive a car 
+  \item Read addresses on envelopes
+  \item Detect spam
+  \end{enumerate}
+\item Maybe we can write programs to write programs when we can't
+\item Some terms we used to use for ML
+  \begin{itemize}
+  \item Artificial intelligence
+  \item Expert systems
+  \end{itemize}
+\end{enumerate}
+
+Disclaimers
+\begin{itemize}
+\item The literature is overwhelmingly in English
+\item Time is short
+\item You should plan to spend three hours working on your own per hour in class
+\end{itemize}
+
+Types of ML
+\begin{enumerate}
+\item \fbox{Supervised}
+  \begin{enumerate}
+  \item Training data: input and correct responses
+  \item Regression (continuous) (example: home prices)
+  \item Classification (discrete) (example: medical outcome (alive/dead))
+  \end{enumerate}
+\item \fbox{Unsupervised}
+  \begin{enumerate}
+  \item Clustering
+  \item Deep neural networks
+  \item Associative (example: human experience, e.g. from a career)
+  \item Dimensionality reduction
+  \end{enumerate}
+\item \fbox{Reinforcement}
+  \begin{enumerate}
+  \item Make a choice, get feedback
+  \item Online
+  \item Can be stochastic (example: predicting weather from local clues)
+  \end{enumerate}
+\end{enumerate}
+
+Talk about course structure
+\begin{itemize}
+\item In class: mostly theory, some code, some maths
+\item Group work (in class, without professor)
+\item Between classes: coding assignments (python)
+\item Communication: email, github (ideally use similar names)
+\item Help each other via email, github issues, etc.
+\item Participative evaluation
+\item Don't copy.  Learn.
+\item Final project
+\end{itemize}
+
+\fbox{Curse of Dimensionality}
+\begin{enumerate}
+\item \textit{Fléau (ou : malédiction) de la dimension}
+\item Volume of unit cube $\pm\epsilon$
+\item Distance from $(0,0,\ldots,0)$ to $(1,1,\ldots,1)$
+\item Physics: $1/r^{d-1}$
+\item It's easy to get lost\dots
+\item Richard Ernest Bellman, Dynamic programming, Princeton
+  University Press, 1957.
+\end{enumerate}
+
+Probability
+\begin{enumerate}
+\item Event
+\item Complement of an event
+\item Disjoint (mutually exclusive)
+\item Independent events --- knowing one outcome gives no information about other
+\item Marginal probability
+\item Joint probability
+\end{enumerate}
+
+Addition rule: independent events
+\begin{displaymath}
+  \Pr(A\cup B) = \Pr(A) + \Pr(B)
+\end{displaymath}
+
+Addition rule: dependent events
+\begin{displaymath}
+  \Pr(A\cup B) = \Pr(A) + \Pr(B) - \Pr(A\cap B)
+\end{displaymath}
+
+Multiplication rule: independent events
+\begin{displaymath}
+  \Pr(A\cap B) = \Pr(A) \Pr(B)
+\end{displaymath}
+
+Multiplication rule: dependent events
+\begin{displaymath}
+  \Pr(A\cap B) = \Pr(A\mid B) \Pr(B)
+\end{displaymath}
+
+Conditional probability
+\begin{displaymath}
+  \Pr(A\mid B) = \frac{\Pr(A\cap B)}{\Pr(B)}
+\end{displaymath}
+
+\vbox{
+\begin{displaymath}
+  \cup_i A_i = A \quad\land\quad A_i \cap A_j = \emptyset \implies
+\end{displaymath}
+
+\begin{displaymath}
+  P(A_1 \mid B) = \frac{\Pr(B\mid A_1) \Pr(A_1)}{\sum_i \Pr(B\mid
+      A_1)\Pr(A_1) + \dots + \Pr(B\mid A_k)\Pr(A_k)}
+\end{displaymath}
+}
+
+\textbf{Statistics}
+\begin{enumerate}
+\item Goal for a bit: think like a statistician
+\item Said differently: goal is to compare reality to a model
+\item Or to find a model and then compare.
+\item Good statistical models are often relatively simple.
+\end{enumerate}
+
+\textbf{What is statistics?}
+\begin{enumerate}
+\item Identify a question or problem.
+\item Collect relevant data on the topic.
+\item Analyze the data.
+\item Form a conclusion.
+\end{enumerate}
+Sadly, sometimes people forget 1.
+  
+Statistics is about making 2--4 efficient, rigorous, and meaningful.
+
+\textbf{What is data science?}
+\begin{enumerate}
+\item Define the question of interest
+\item Get the data
+\item Clean the data
+\item Explore the data
+\item Fit statistical models
+\item Communicate the results
+\item Make your analysis reproducible
+\end{enumerate}
+
+\begin{itemize}
+\item What does the public perceive?
+\item What takes the most time?
+\item What is most often forgotten?
+\end{itemize}
+
+Is this the same as what statistics is?
+
+\textbf{Study design}
+\begin{enumerate}
+\item Anecdote\\[2mm]
+  \vbox{
+  Some properties of anecdote:
+  \begin{itemize}
+  \item is data
+  \item haphazardly collected
+  \item is generally not representative
+  \item sometimes result of selective retention
+  \item does not accumulate to be representative
+  \item might be true (by chance)
+  \item is ok to use as hypothesis, but be clear that hypothesis is anecdote
+  \end{itemize}
+}
+\item Study types\\[2mm]
+  \vbox{
+    \begin{itemize}
+    \item Observational
+    \item Experimental
+    \end{itemize}
+  
+    What can go wrong?
+    \begin{itemize}
+    \item Forgetting that association $\ne$ causation
+    \item Not random
+    \item Confounding variables
+    \end{itemize}
+  }
+\item Observational studies can't conclude causality
+
+\item Observational studies can be
+  \begin{itemize}
+  \item prospective: identify individuals, collect information
+  \item retrospective
+  \item we can combine them
+  \end{itemize}
+
+\item Experimental studies
+  \begin{itemize}
+  \item We do stuff
+  \item Can conclude causation if properly designed
+    \begin{itemize}
+    \item controlling: hold other variables constant (e.g., drink pill
+      with full glass of water even if we don't care)
+    \item randomization: cancel out effects we can't control
+    \item replication: enough participants
+    \end{itemize}
+  \end{itemize}
+
+\item Study types example
+  \begin{itemize}
+  \item Sunscreen use correlated to skin cancer rates.
+  \item Confounding variable
+  \end{itemize}
+
+\item Random sampling hazards
+  \begin{itemize}
+  \item Not actually random
+  \item Convenience sample
+  \item Non-response bias
+  \end{itemize}
+\end{enumerate}
+
+\textbf{Variable types}
+\begin{itemize}
+\item all = numerical + categorical
+\item numerical = continuous + discrete
+\item categorical = regular + ordinal
+\end{itemize}
+
+\textbf{bias vs variance}
+
+Illustrate with bullet holes on a round target.
+
+
+\textbf{Statistical concepts}
+
+\textbf{Variable types}
+\begin{itemize}
+\item Input:  Features
+\item Input variables measure:  Explanatory variable
+\item Output: Response variable
+\item Training set
+\item Test set (tune parameters) (compare model parameters)
+\item Validation set (tune hyperparameters) (measure performance of model)
+\item Cross validation
+\item Bias - same errors regardless of input (inflexible)
+\item Variance - different errors with same input (too flexible)
+\end{itemize}
+
+\textbf{Population statistics}
+\begin{itemize}
+\item \textbf{Deviation} is distance from mean
+\item \textbf{Variance} is mean square of deviations
+\item \textbf{Standard deviation} is square root of variance
+\end{itemize}
+\begin{displaymath}
+  s^2 = \frac{(\overline x - x_1)^2 + \dotsb (\overline x - x_n)^2}{n-1}
+\end{displaymath}
+\begin{displaymath}
+  \sigma^2 = \frac{(\overline x - x_1)^2 + \dotsb (\overline x - x_n)^2}{n}
+\end{displaymath}
+
+\begin{displaymath}
+  \mbox{Var}(X) = \sigma^2 = (\overline x - x_1)^2 \Pr(X=x_1) + \dotsb
+  (\overline x - x_n)^2 \Pr(X=x_n)
+\end{displaymath}
+
+\texttt{Mean}
+\begin{itemize}
+\item sample mean vs population
+\item Sample standard deviation and variance: divide by $n-1$
+\item Illustrate with balance beam
+\item Illustrate with weights hanging off a balanced beam
+\item Illustrate with distribution and balanced on pivot at centre of mass
+\end{itemize}
+
+\begin{displaymath}
+  \mu = E(X) = \sum w_i x_i = \mathbf{w\cdot x}
+\end{displaymath}
+
+\begin{displaymath}
+  \mu = E(X) = \sum \Pr(X=x_i) x_i  
+\end{displaymath}
+
+\begin{displaymath}
+  \mu = E(X) = \int xf(x) \D{x}
+\end{displaymath}
+
+
+\fbox{boxplot-vs-pdf.png}
+
+\begin{enumerate}
+\item Distributions
+  \begin{itemize}
+  \item \fbox{Important: pdf (pmf), cdf, ppf}
+    \begin{itemize}
+    \item pdf = densité de probabilité
+    \item pmf = fonction de masse
+    \item cdf = fonction de répartition
+    \item ppf = ?
+    \end{itemize}
+  \item The rest: just so you've heard of them
+  \end{itemize}
+\item Normal distributions
+  \begin{itemize}
+  \item Sample mean vs population mean
+  \item How close are they?
+  \item Point estimate: if you have to guess, this is it
+  \item Correction: if I want to be on average weighted right as much possible
+  \end{itemize}
+\item \fbox{Sampling distributions}
+  \begin{itemize}
+  \item Sampling mean is unimodal and approximately symmetric
+  \item It is centred at population mean.
+    \item The standard deviation of the sample mean tells us how far a
+      point sample's mean is likely to be from the population mean.
+      In other words, how much error we are likely to have in the
+      point estimate's mean.  \textbf{Standard error.}
+    \item TODO: Generate uniform population, sample,
+      and plot sampling distribution
+    \item TODO Generate highly skewed population, sample, and plot
+      sampling distribution
+    \item In real life, we don't have access to the population
+      parameters.  We have to \textit{estimate} them from samples.  So
+      we can't \textit{know} the standard error (erreur type).
+  \end{itemize}
+\item \fbox{Confidence intervals}
+  \begin{itemize}
+  \item Sampling is usually expensive.
+  \item Reminder:  Independent random samples!
+  \item
+    Correct language: ``We are 95\% confident that the population
+    parameter is between\dots''
+  \item
+    Incorrect language: describe the confidence interval as capturing
+    the population parameter with a certain probability.
+  \item
+    This is one of the most common errors: while it might be useful to
+    think of it as a probability, the confidence level only quantifies
+    how plausible it is that the parameter is in the interval.
+  \item
+    Another especially important consideration of confidence intervals
+    is that they only try to capture the population parameter. Our
+    intervals say \textit{nothing} about the confidence of
+    \begin{itemize}
+    \item capturing individual observations
+    \item a proportion of the observations
+    \item about capturing point estimates
+    \end{itemize}
+    Confidence intervals only attempt to capture population
+    parameters.
+  \end{itemize}
+\end{enumerate}
+
+Sample $n$ points, choose an interval around the sample mean.
+
+A 95\% confidence interval means if we sample repeatedly, about 95\%
+of the samples will contain the population mean.
+
+\fbox{boxplot illustrations (.png) $\times 2$}
+
+\textbf{Linear Algebra}
+
+$B$ is a basis for $V$ iff any of these conditions are met:
+\begin{itemize}
+\item $B$ is a minimal generating set of $V$
+\item $B$ is a maximal set of linearly independent vectors
+\item Every vector $v\in V$ can be expressed in a unique way as a sum of $b_i\in B$
+\end{itemize}
+The conditions are equivalent.
+
+\textbf{Eigenvectors, eigenvalues}
+
+\begin{displaymath}
+  Av = \lambda v
+\end{displaymath}
+
+\begin{displaymath}
+  Av = \lambda 1 v \;\iff\; (A-\lambda 1)v = 0
+\end{displaymath}
+
+\fbox{Eigenvector video}
+
+\end{document}
