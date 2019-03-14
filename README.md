@@ -56,11 +56,15 @@ Vous comprenez des opérations de bases : addition et multiplication.
 Vous comprenez qu'une matrice représente une transformation linéaire
 en termes d'une base donnée.
 
+L'apprentissage par youtube n'est ni conseillée ni adéquate.  Ceci
+dit, si vous connaissez déjà l'algèbre linéaire, la série sur le sujet
+par
+[3Blue1Brown](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+est excellente.
+
 En probabilité, vous comprenez les conceptes de dépendances et
 indépendances, la probabilité conditionnelle, et, idéallement, le
 théorème de Bayes.
-
-Nous vous proposerons quelques resources pour réviser ces sujets.
 
 
 ## Outils et support
