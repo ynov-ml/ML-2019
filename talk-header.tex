@@ -1,0 +1,34 @@
+\documentclass[t,aspectratio=169]{beamer}
+\input ../macros.tex
+
+\mode<presentation>
+{
+  \usetheme{default}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{footline}[frame number]
+  \setbeamertemplate{items}[circle]
+  \usecolortheme{seahorse}
+}
+
+\author[Abrahamson] {Jeff Abrahamson}
+\date{9, 16 décembre 2016 \hspace{3mm} 13 janvier, 9 mars 2017}
+%\institute{}
+
+%\setbeamertemplate{footline}[text line]{%
+%  \parbox{\linewidth}{\vspace*{-8pt}some text\hfill\insertshortauthor\hfill\insertpagenumber}}
+\setbeamertemplate{footline}[text line]{%
+  \parbox{0.8\linewidth}{
+    %\vspace*{-8pt}\insertshorttitle~(\insertshortauthor)
+    \vspace*{-8pt}Copyright 2016 Jeff Abrahamson, for private use by course students only
+  }
+  \hfill%
+  \parbox{.2\linewidth}{\vspace*{-8pt}{Ynov 2016--2017}}
+  \hfill%
+  \parbox{0.15\linewidth}{
+    \vspace*{-8pt}\raggedleft\insertpagenumber
+  }
+}
+
+\newcommand\cnote[1]{}
+
+\parskip=8 pt

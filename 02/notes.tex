@@ -1,0 +1,63 @@
+\input ../notes-header.tex
+
+\begin{document}
+
+\notetitle{02}{2019-03-21}
+
+\textbf{Modeling}
+\begin{itemize}
+\item Vector space
+\item Features are dimensions
+\item Feature extraction
+\item Feature engineering (synthetic features)
+  \begin{itemize}
+  \item Brainstorm
+  \item Pick some
+  \item Make them
+  \item Evaluate
+  \item Repeat
+  \end{itemize}
+\item \blue{titanic titles}
+\item \blue{reading-time}
+\item one-hot encoding
+\item \blue{python/pandas examples}
+\end{itemize}
+
+\textbf{Example: Text Features}
+\begin{itemize}
+\item Bag of words
+  \begin{itemize}
+  \item corpus (documents)
+  \item vocabulary (set of unique words)
+  \item words
+  \end{itemize}
+\item Notes
+  \begin{itemize}
+  \item order doesn't matter
+  \item stop words
+  \item stemming (racinisation, désuffixation)
+  \item Lemmatisation (transformer en lemme)
+  \end{itemize}
+\end{itemize}
+
+\textbf{Example: Image Features}
+\begin{itemize}
+\item Corners, edges (rotation invariant, but scaling can hide)
+\item More complex: scale space or RNN
+\item Point matching is easy
+\item Problems
+  \begin{itemize}
+  \item Illumination
+  \item Scale
+  \item Rotation
+  \item Skew (perspective)
+  \item Data size (matrices not sparse)
+  \end{itemize}
+
+\end{itemize}
+
+\textbf{Linear Regression}
+
+\blue{slides}
+
+\end{document}
