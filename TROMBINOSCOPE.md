@@ -6,4 +6,4 @@ Jeff Abrahamson
 
 Nicolas Goureau
 
-![Jeff Abrahamson](images/nicolasgoureau.png)
+![Nicolas Goureau](images/nicolasgoureau.jpg)
