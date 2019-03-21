@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  20 MAR 2019 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  21 MAR 2019 07:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2153,6 +2153,13 @@ $[]$  $[]$  $[]$
 
 [58
 
+] (./sk_linreg.py)
+Overfull \hbox (63.56435pt too wide) has occurred while \output is active
+$[]$  $[]$  $[]$  
+ []
+
+[59
+
 ]
 \tf@nav=\write6
 \openout6 = `talk.nav'.
@@ -2163,18 +2170,18 @@ $[]$  $[]$  $[]$
 \tf@snm=\write8
 \openout8 = `talk.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
  (./talk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 429.
 Package rerunfilecheck Info: File `talk.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20748 strings out of 494821
- 368291 string characters out of 6177890
- 477306 words of memory out of 5000000
+ 20753 strings out of 494821
+ 368345 string characters out of 6177890
+ 477305 words of memory out of 5000000
  23408 multiletter control sequences out of 15000+600000
  68298 words of font info for 105 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -2192,10 +2199,10 @@ x-type1/mathx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr
 /share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on talk.pdf (58 pages, 1159002 bytes).
+Output written on talk.pdf (59 pages, 1160217 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 117 named destinations out of 1000 (max. 500000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 327 compressed objects within 4 object streams
+ 119 named destinations out of 1000 (max. 500000)
  173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
