@@ -1,5 +1,12 @@
 # Annonces
 
+## [2019-03-21]
+
+Merci d'envoyer des PRs pour ajouter votre photo au trombinoscope.
+Les photos à 256x256 svp.  Suggestions / PR de formatage sont les bien
+bienvenues.
+
+
 ## [2019-03-16]
 
 Les données pour le Titanic sont dès maintenant disponibles dans 01/.
