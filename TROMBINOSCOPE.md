@@ -7,3 +7,7 @@ Jeff Abrahamson
 Nicolas Goureau
 
 ![Nicolas Goureau](images/nicolasgoureau.jpg)
+
+Benjamin Brasseur
+
+![Benjamin Brasseur](images/benjaminbrasseur.jpg)
