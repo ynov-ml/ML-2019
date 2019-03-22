@@ -7,3 +7,6 @@ Jeff Abrahamson
 Nicolas Goureau
 
 ![Nicolas Goureau](images/nicolasgoureau.jpg)
+
+Guillaume Fourny
+![Guillaume Fourny](images/guillaumefourny.jpg)
