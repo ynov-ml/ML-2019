@@ -228,7 +228,20 @@
   \only<4>{
     \sphrase{Set $y=1 \iff h_\theta(x) = \Pr(y=1\mid x; \theta) > \frac{1}{2}$}
   }
-  \only<5>{
+  \only<5-6>{
+    Let
+    \begin{align*}
+      Pr(y=0\mid x; \theta) & = h_\theta(x) \\
+      Pr(y=1\mid x; \theta) & = 1 - h_\theta(x) \\
+    \end{align*}
+    \only<6>{
+      Then
+      \begin{displaymath}
+        Pr(y=0\mid x; \theta) + \Pr(y=1\mid x; \theta) = 1
+      \end{displaymath}
+    }
+  }
+  \only<7>{
     Math review:
     \begin{itemize}
     \item $z=(\theta^T x)$
@@ -237,11 +250,9 @@
     \end{itemize}
 
     }
-
 \end{frame}
 
-\begin{frame}[t]
-  \frametitle{Logistic (sigmoid, logit) function}
+\begin{frame}[t]{Logistic (sigmoid) function}
   \vspace{2cm}
   \begin{mphrase}
     \sigma(z) = \frac{e^z}{e^z  +1} = \frac{1}{1+e^{-z}}
@@ -267,60 +278,62 @@
     }
 \end{frame}
 
-\begin{frame}[t]
-  \frametitle{Cost function in logistic regression}
+\begin{frame}[t]{Cost function in logistic regression}
   \vspace{1cm}
+  \purple{In linear regression, we had}
   
+  \begin{displaymath}
+    \only<1>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (e_i)^2}
+    \only<2>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (\hat{y}_i - y_i)^2}
+    \only<3>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x_i) - y_i)^2}
+    \only<4>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x) - y)^2}
+  \end{displaymath}
+\end{frame}
+
+\begin{frame}[t]{Cost function in logistic regression}
+  \vspace{1cm}
+  \purple{To do gradient descent, we need the derivative of the cost function.}
   \only<1-3>{
-    \purple{In linear regression, we had}
-    
-    \begin{displaymath}
-      \only<1>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (e_i)^2}
-      \only<2>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (\hat{y}_i - y_i)^2}
-      \only<3>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x_i) - y_i)^2}
-      \only<4>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x) - y)^2}
-      \only<5>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m \mbox{Cost}(h_\theta(x), y)}
-    \end{displaymath}
-  }
-  \only<4-7>{
-    Here's a convex cost function:
-
-    \begin{displaymath}
-      \mbox{Cost}(h_\theta(x), y) = \begin{cases}
-        -\log(h_\theta(x)) & \mbox{if } y = 1 \\[2mm]
-        -\log(1-h_\theta(x)) & \mbox{if } y = 0
-      \end{cases}
-    \end{displaymath}
-    
-    \only<5-7>{\vspace{1cm}}
-    \only<5>{
-      \blue{Exercise: Plot this (cost vs $y$).}
-    }
-    \only<6>{
-      \begin{displaymath}
-        J(\theta) = \frac{1}{2m} \sum_{i=1}^m \mbox{Cost}(h_\theta(x), y)
-      \end{displaymath}
-    }
-    \only<7>{
-      \begin{displaymath}
-        J(\theta) = y\cdot \log(h_\theta(x)) + (1-y) \cdot \log(1-h_\theta(x))
-      \end{displaymath}
-    }
-  }
-\end{frame}
-
-\begin{frame}
-  \frametitle{Gradient descent}
-  \begin{bphrase}
     \begin{align*}
-      \theta_j & \leftarrow\, \theta_j - \frac{\alpha}{m} \sum_{i=1}^m
-                 \left(h_{\theta}(x^{(i)}) - y^{(i)}\right) \cdot x_j^{(i)} \\
+      g(z) & = \frac{1}{1-e^{-z}}
     \end{align*}
-    \centerline{for $j=1, \cdots, n$}
-  \end{bphrase}
+  }
+  \begin{align*}
+    \only<2->{
+    \frac{dg}{dz}
+    }
+    \only<2-4>{
+    & = \frac{-1}{\left( 1 - e^{-z}\right)^2} \cdot \left(e^{-z}\right) \\[2mm]
+    }
+    \only<3-5>{
+    & = \frac{e^{-z}}{\left( 1 - e^{-z}\right)^2} \\[2mm]
+    }
+    \only<4-6>{
+    & = \frac{e^{-z}}{\left( 1 - e^{-z}\right)\left( 1 - e^{-z}\right)} \\[2mm]
+    }
+    \only<5-7>{
+    & = \left(\frac{1}{1 - e^{-z}}\right) \left(\frac{e^{-z}}{1 - e^{-z}}\right) \\[2mm]
+    }
+    \only<6-8>{
+    & = \left(\frac{1}{1 - e^{-z}}\right) \left(\frac{1 - \left(1 - e^{-z}\right)}{1 - e^{-z}}\right) \\[2mm]
+    }
+    \only<7-9>{
+    & = \left(\frac{1}{1 - e^{-z}}\right) \left( 1 - \frac{1}{1 - e^{-z}}\right) \\[2mm]
+    }
+    \only<8-11>{
+    & = g(z) (1-g(z))
+      }
+  \end{align*}
+  
+  \only<11>{
+    \vspace{1cm}
+    \purple{And for today we'll stop there, coming back to this next week.}
+  }
 \end{frame}
 
 \begin{frame}
+  \vspace{1cm}
+
   \only<1>{\phrase{null hypothesis}}
   \only<2>{\phrase{true positive, true negative}
     \vspace{1cm}
@@ -334,22 +347,25 @@
   \only<5>{\phrase{specificity}\centerline{100\% specificity = no false positives}}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Precision}
+\begin{frame}{Precision}
+  \vspace{1cm}
+
   \begin{mphrase}
     P = \frac{TP}{TP + FP}
   \end{mphrase}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Recall}
+\begin{frame}{Recall}
+  \vspace{1cm}
+
   \begin{mphrase}
     R = \frac{TP}{TP + FN}
   \end{mphrase}
 \end{frame}
 
-\begin{frame}
-  \frametitle{F1 score}
+\begin{frame}{F1 score}
+  \vspace{1cm}
+
   \begin{mphrase}
     F1 = \frac{\text{precision}\cdot\text{recall}}{\text{precision} + \text{recall}}
   \end{mphrase}
@@ -376,5 +392,12 @@
   }
 \end{frame}
 
+\begin{frame}{Scikit Learn}
+  \lstinputlisting{sk_linreg.py}
+\end{frame}
+
+\begin{frame}{Scikit Learn}
+  \lstinputlisting{sk_logreg.py}
+\end{frame}
 
 \end{document}
