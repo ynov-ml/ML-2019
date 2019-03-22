@@ -11,3 +11,7 @@ Nicolas Goureau
 Benjamin Brasseur
 
 ![Benjamin Brasseur](images/benjaminbrasseur.jpg)
+
+Tanguy Badier
+
+![Tanguy Badier](images/tanguybadier.jpg)
