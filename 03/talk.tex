@@ -1,0 +1,403 @@
+\input ../talk-header.tex
+\title
+{Machine Learning}
+\subtitle{Logistic Regression}
+
+\begin{document}
+
+\begin{frame}
+  \vphrase{Review of Linear Regression}
+\end{frame}
+
+\begin{frame}{Linear models}
+
+  \only<1>{
+    \textbf{Problem:}  $\{(x_i, y_i)\}$.
+
+    Given $x$, predict $\hat y$.
+  }
+
+  \only<2>{ $x$: \textbf{explanatory} or \textbf{predictor} variable.  Or the \textbf{signal}.
+
+    $y$: \textbf{response} variable.
+
+    \vspace{1cm}
+    \purple{For some reason, we believe a linear model is a good idea.}
+  }
+\end{frame}
+
+\begin{frame}{Residuals}
+
+  Residuals (model error):
+  \begin{itemize}
+  \item What's left over
+  \item What the model doesn't explain
+  \end{itemize}
+
+
+  \only<1>{
+    \vspace{1cm}
+    \begin{displaymath}
+      \text{data} = \text{fit} + \text{residual}      
+    \end{displaymath}
+  }
+  \only<2>{
+    \vspace{1cm}
+    \begin{displaymath}
+      y_i = \hat y_i + e_i
+    \end{displaymath}
+  }
+  \only<3>{
+    \vspace{1cm}
+    \begin{displaymath}
+      e_i = y_i - \hat y_i
+    \end{displaymath}
+  }
+  \only<4>{
+    Goal: small residuals.
+
+    \vspace{1cm}
+    \begin{displaymath}
+      \sum e_i^2
+    \end{displaymath}
+  }
+\end{frame}
+
+\begin{frame}{Hypothesis (Model)}
+
+  \only<1>{
+    \begin{mphrase}
+      y = a + bx
+    \end{mphrase}
+  }
+  \only<2>{
+    \begin{mphrase}
+      h_\theta(x) = \theta_0 + \theta_1 x
+    \end{mphrase}
+  }
+\end{frame}
+
+\begin{frame}{Cost Function}
+  Also called the ``loss function''.
+
+  \only<1>{
+    \begin{mphrase}
+      J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^m (e_i)^2
+    \end{mphrase}
+  }
+  \only<2>{
+    \begin{mphrase}
+      J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^m (\hat{y}_i - y_i)^2
+    \end{mphrase}
+  }
+  \only<3>{
+    \begin{mphrase}
+      J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x_i) - y_i)^2
+    \end{mphrase}
+  }
+\end{frame}
+
+
+\begin{frame}
+  \cimgh{../02/parameter-space.png}
+\end{frame}
+
+
+
+\begin{frame}{Gradient Descent}
+
+  \only<1>{
+    \begin{mphrase}
+      \begin{dcases}
+        \theta_0 & \leftarrow\, \theta_0 - \alpha
+        \frac{\partial}{\partial\theta_0}\, J(\theta_0, \theta_1)
+        \\[3mm]
+        % 
+        \theta_1 & \leftarrow\, \theta_1 - \alpha
+        \frac{\partial}{\partial\theta_1}\, J(\theta_0, \theta_1)
+      \end{dcases}
+    \end{mphrase}
+  }
+  \only<2>{
+    \begin{mphrase}
+      \begin{dcases}
+        \theta_0 & \leftarrow\, \theta_0 - \alpha
+        \frac{\partial}{\partial\theta_0}\,
+        \left(\frac{1}{2m} \sum_{i=1}^m (h_\theta(x_i) - y_i)^2\right)
+        \\[3mm]
+        % 
+        \theta_1 & \leftarrow\, \theta_1 - \alpha
+        \frac{\partial}{\partial\theta_1}\,
+        \left(\frac{1}{2m} \sum_{i=1}^m (h_\theta(x_i) - y_i)^2\right)
+      \end{dcases}
+    \end{mphrase}
+  }
+  \only<3>{
+    \begin{mphrase}
+      \begin{dcases}
+        \theta_0 & \leftarrow\, \theta_0 - \alpha
+        \frac{\partial}{\partial\theta_0}\,
+        \left(\frac{1}{2m} \sum_{i=1}^m (\theta_0 + \theta_1 x_i - y_i)^2\right)
+        \\[3mm]
+        % 
+        \theta_1 & \leftarrow\, \theta_1 - \alpha
+        \frac{\partial}{\partial\theta_1}\,
+        \left(\frac{1}{2m} \sum_{i=1}^m (\theta_0 + \theta_1 x_i - y_i)^2\right)
+      \end{dcases}
+    \end{mphrase}
+  }
+  \only<4>{
+    \begin{mphrase}
+      \begin{dcases}
+        \theta_0 & \leftarrow \, \theta_0 - 
+        \frac{\alpha}{m} \sum_{i=1}^m ( \theta_0 + \theta_1 x_i - y_i ) \, 1
+        \\[3mm]
+        % 
+        \theta_1 & \leftarrow \, \theta_1 -
+        \frac{\alpha}{m} \sum_{i=1}^m (\theta_0 + \theta_1 x_i - y_i) - y_i) \, x_i
+      \end{dcases}
+    \end{mphrase}
+  }
+  \only<5>{
+    \begin{mphrase}
+      \begin{dcases}
+        \theta_0 & \leftarrow \, \theta_0 - 
+        \frac{\alpha}{m} \sum_{i=1}^m ( h_\theta(x_i) - y_i )
+        \\[3mm]
+        % 
+        \theta_1 & \leftarrow \, \theta_1 -
+        \frac{\alpha}{m} \sum_{i=1}^m (h_\theta(x_i) - y_i) \, x_i
+      \end{dcases}
+    \end{mphrase}
+  }
+\end{frame}
+
+\begin{frame}
+  \vphrase{Logistic regression}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Linear regression}
+  \begin{bphrase}
+    \begin{itemize}
+    \item Inputs are continuous or discrete
+    \item Continuous output
+    \item Normal residues
+    \item Predict $\hat{y}$ for $x$ given $\{(x_i, y_i)\}$
+    \end{itemize}
+  \end{bphrase}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logistic regression}
+  \begin{bphrase}
+    \begin{itemize}
+    \item Inputs are continuous or discrete
+    \item Binary output
+    \item Classification
+    \end{itemize}
+  \end{bphrase}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logistic regression}
+  \begin{itemize}
+  \item Have: continuous and discrete inputs
+  \item Want: class (0 or 1)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Logistic regression: motivation}
+  % This slide left blank for drawing.
+\end{frame}
+
+\begin{frame}{Probabilistic inspiration}
+  \purple{The probabilities are motivations: this doesn't really behave like a probability.}
+  
+  \only<1>{
+    \sphrase{{$h_\theta(x) = .75$} $\iff$ {event has 75\% of being true}}
+  }
+  \only<2>{
+    \sphrase{$h_\theta(x) = \Pr(y=1\mid x; \theta)$ = 0.75}
+  }
+  \only<3>{
+    \sphrase{So this must be true:}
+    
+    \sphrase{$\Pr(y=0\mid x; \theta) + \Pr(y=1\mid x; \theta)$ = 1}
+  }
+  \only<4>{
+    \sphrase{Set $y=1 \iff h_\theta(x) = \Pr(y=1\mid x; \theta) > \frac{1}{2}$}
+  }
+  \only<5-6>{
+    Let
+    \begin{align*}
+      Pr(y=0\mid x; \theta) & = h_\theta(x) \\
+      Pr(y=1\mid x; \theta) & = 1 - h_\theta(x) \\
+    \end{align*}
+    \only<6>{
+      Then
+      \begin{displaymath}
+        Pr(y=0\mid x; \theta) + \Pr(y=1\mid x; \theta) = 1
+      \end{displaymath}
+    }
+  }
+  \only<7>{
+    Math review:
+    \begin{itemize}
+    \item $z=(\theta^T x)$
+    \item $\theta^T x \ge 0 \iff h_\theta \ge 0.5$
+    \item $\theta^T x \ge 0 \iff $ predict $y=1$
+    \end{itemize}
+
+    }
+\end{frame}
+
+\begin{frame}[t]{Logistic (sigmoid) function}
+  \vspace{2cm}
+  \begin{mphrase}
+    \sigma(z) = \frac{e^z}{e^z  +1} = \frac{1}{1+e^{-z}}
+  \end{mphrase}
+
+  \only<2>{
+    \vspace{8mm}
+    Exercise: plot this
+  }
+  \only<3>{
+    Let
+    \begin{displaymath}
+      z = h_\theta(x) = \theta_0 + \theta_1 x
+    \end{displaymath}
+
+  }
+  \only<4>{
+    Then
+    \begin{displaymath}
+      \sigma(z) = \frac{1}{1 + e^{-(\theta_0 + \theta_1 x)}}
+    \end{displaymath}
+
+    }
+\end{frame}
+
+\begin{frame}[t]{Cost function in logistic regression}
+  \vspace{1cm}
+  \purple{In linear regression, we had}
+  
+  \begin{displaymath}
+    \only<1>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (e_i)^2}
+    \only<2>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (\hat{y}_i - y_i)^2}
+    \only<3>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x_i) - y_i)^2}
+    \only<4>{J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x) - y)^2}
+  \end{displaymath}
+\end{frame}
+
+\begin{frame}[t]{Cost function in logistic regression}
+  \vspace{1cm}
+  \purple{To do gradient descent, we need the derivative of the cost function.}
+  \only<1-3>{
+    \begin{align*}
+      g(z) & = \frac{1}{1-e^{-z}}
+    \end{align*}
+  }
+  \begin{align*}
+    \only<2->{
+    \frac{dg}{dz}
+    }
+    \only<2-4>{
+    & = \frac{-1}{\left( 1 - e^{-z}\right)^2} \cdot \left(e^{-z}\right) \\[2mm]
+    }
+    \only<3-5>{
+    & = \frac{e^{-z}}{\left( 1 - e^{-z}\right)^2} \\[2mm]
+    }
+    \only<4-6>{
+    & = \frac{e^{-z}}{\left( 1 - e^{-z}\right)\left( 1 - e^{-z}\right)} \\[2mm]
+    }
+    \only<5-7>{
+    & = \left(\frac{1}{1 - e^{-z}}\right) \left(\frac{e^{-z}}{1 - e^{-z}}\right) \\[2mm]
+    }
+    \only<6-8>{
+    & = \left(\frac{1}{1 - e^{-z}}\right) \left(\frac{1 - \left(1 - e^{-z}\right)}{1 - e^{-z}}\right) \\[2mm]
+    }
+    \only<7-9>{
+    & = \left(\frac{1}{1 - e^{-z}}\right) \left( 1 - \frac{1}{1 - e^{-z}}\right) \\[2mm]
+    }
+    \only<8-11>{
+    & = g(z) (1-g(z))
+      }
+  \end{align*}
+  
+  \only<11>{
+    \vspace{1cm}
+    \purple{And for today we'll stop there, coming back to this next week.}
+  }
+\end{frame}
+
+\begin{frame}
+  \vspace{1cm}
+
+  \only<1>{\phrase{null hypothesis}}
+  \only<2>{\phrase{true positive, true negative}
+    \vspace{1cm}
+    \phrase{false positive, false negative}}
+  \only<3>{\phrase{type I error}
+  \centerline{(incorrect rejection of null hypothesis)}
+    \vspace{1cm}
+    \phrase{type II error}
+    \centerline{(failure to reject null hypothesis)}}
+  \only<4>{\phrase{sensitivity}\centerline{100\% sensitivity = no false negatives}}
+  \only<5>{\phrase{specificity}\centerline{100\% specificity = no false positives}}
+\end{frame}
+
+\begin{frame}{Precision}
+  \vspace{1cm}
+
+  \begin{mphrase}
+    P = \frac{TP}{TP + FP}
+  \end{mphrase}
+\end{frame}
+
+\begin{frame}{Recall}
+  \vspace{1cm}
+
+  \begin{mphrase}
+    R = \frac{TP}{TP + FN}
+  \end{mphrase}
+\end{frame}
+
+\begin{frame}{F1 score}
+  \vspace{1cm}
+
+  \begin{mphrase}
+    F1 = \frac{\text{precision}\cdot\text{recall}}{\text{precision} + \text{recall}}
+  \end{mphrase}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Non-linear decision boundaries}
+  \only<1> {
+    \cimggg{non-linear-boundary.png}
+    \sphrase{$h_\theta(x)) = g(\theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_1^2 + \theta_4 x_2^2$}
+
+    \vfill
+    \prevwork{Andrew Ng}
+  }
+  \only<2> {
+    \sphrase{OvA = OvR}
+    \vspace{1cm}
+    \sphrase{OvO}
+  }
+  \only<3> {
+    \sphrase{One vs All = One vs Rest}
+    \vspace{1cm}
+    \sphrase{One vs One}
+  }
+\end{frame}
+
+\begin{frame}{Scikit Learn}
+  \lstinputlisting{sk_linreg.py}
+\end{frame}
+
+\begin{frame}{Scikit Learn}
+  \lstinputlisting{sk_logreg.py}
+\end{frame}
+
+\end{document}

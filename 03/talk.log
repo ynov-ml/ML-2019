@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  21 MAR 2019 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  22 MAR 2019 07:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1553,13 +1553,8 @@ Overfull \hbox (63.56435pt too wide) detected at line 6
 $[]$  $[]$  $[]$  
  []
 
-<titanic-titles.png, id=13, 475.7775pt x 391.4625pt>
-File: titanic-titles.png Graphic file (type png)
-<use titanic-titles.png>
-Package pdftex.def Info: titanic-titles.png  used on input line 14.
-(pdftex.def)             Requested size: 275.31953pt x 226.52919pt.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 10.
 
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
@@ -1567,12 +1562,13 @@ $[]$  $[]$  $[]$
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./titanic-titles.png>]
-<reading-time-1.png, id=24, 897.3525pt x 443.6575pt>
-File: reading-time-1.png Graphic file (type png)
-<use reading-time-1.png>
-Package pdftex.def Info: reading-time-1.png  used on input line 19.
-(pdftex.def)             Requested size: 358.50229pt x 177.24321pt.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 27.
 
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
@@ -1580,77 +1576,56 @@ $[]$  $[]$  $[]$
 
 [2
 
- <./reading-time-1.png>]
-<reading-time-2.png, id=30, 895.345pt x 441.65pt>
-File: reading-time-2.png Graphic file (type png)
-<use reading-time-2.png>
-Package pdftex.def Info: reading-time-2.png  used on input line 24.
-(pdftex.def)             Requested size: 358.50229pt x 176.84555pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [3
 
- <./reading-time-2.png>]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 52.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) (./pandas_1.py)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [4
 
-] (./pandas_2.py
-Overfull \hbox (27.66574pt too wide) in paragraph at lines 3--4
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (15.66562pt too wide) in paragraph at lines 5--6
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [5
 
-] (./pandas_3.py)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [6
 
-] (./pandas_4.py)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [7
 
-] (./pandas_5.py)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [8
 
-] (./pandas_6.py)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [9
 
-] (./pandas_7.py)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1658,36 +1633,25 @@ $[]$  $[]$  $[]$
 [10
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 52.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 52.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [11
 
-] (./pyplot_1.py)
-<pyplot_1.png, id=80, 417.56pt x 338.26375pt>
-File: pyplot_1.png Graphic file (type png)
-<use pyplot_1.png>
-Package pdftex.def Info: pyplot_1.png  used on input line 95.
-(pdftex.def)             Requested size: 199.1693pt x 161.34793pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [12
 
- <./pyplot_1.png>] (./pyplot_2.py)
-<pyplot_2.png, id=86, 394.47375pt x 332.24126pt>
-File: pyplot_2.png Graphic file (type png)
-<use pyplot_2.png>
-Package pdftex.def Info: pyplot_2.png  used on input line 95.
-(pdftex.def)             Requested size: 199.1693pt x 167.74754pt.
+]
+<../02/parameter-space.png, id=84, 914.41624pt x 964.60374pt>
+File: ../02/parameter-space.png Graphic file (type png)
+<use ../02/parameter-space.png>
+Package pdftex.def Info: ../02/parameter-space.png  used on input line 103.
+(pdftex.def)             Requested size: 214.73436pt x 226.52919pt.
 
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
@@ -1695,20 +1659,14 @@ $[]$  $[]$  $[]$
 
 [13
 
- <./pyplot_2.png>] (./pyplot_3.py)
-<pyplot_3.png, id=93, 402.50375pt x 336.25626pt>
-File: pyplot_3.png Graphic file (type png)
-<use pyplot_3.png>
-Package pdftex.def Info: pyplot_3.png  used on input line 95.
-(pdftex.def)             Requested size: 199.1693pt x 166.38835pt.
-
+ <../02/parameter-space.png>]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [14
 
- <./pyplot_3.png>] (./pyplot_4.py)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1716,24 +1674,13 @@ $[]$  $[]$  $[]$
 [15
 
 ]
-<pyplot_4.png, id=105, 395.4775pt x 335.2525pt>
-File: pyplot_4.png Graphic file (type png)
-<use pyplot_4.png>
-Package pdftex.def Info: pyplot_4.png  used on input line 95.
-(pdftex.def)             Requested size: 199.1693pt x 168.83821pt.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [16
 
- <./pyplot_4.png>] (./pyplot_5.py
-Overfull \hbox (27.66574pt too wide) in paragraph at lines 7--9
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-)
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1741,35 +1688,20 @@ $[]$  $[]$  $[]$
 [17
 
 ]
-<pyplot_5.png, id=116, 397.485pt x 325.215pt>
-File: pyplot_5.png Graphic file (type png)
-<use pyplot_5.png>
-Package pdftex.def Info: pyplot_5.png  used on input line 95.
-(pdftex.def)             Requested size: 199.1693pt x 162.95943pt.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [18
 
- <./pyplot_5.png>]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 95.
- (./pyplot_6.py)
-<pyplot_6.png, id=124, 397.485pt x 325.215pt>
-File: pyplot_6.png Graphic file (type png)
-<use pyplot_6.png>
-Package pdftex.def Info: pyplot_6.png  used on input line 95.
-(pdftex.def)             Requested size: 199.1693pt x 162.95943pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [19
 
- <./pyplot_6.png>]
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1777,9 +1709,6 @@ $[]$  $[]$  $[]$
 [20
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 131.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1794,24 +1723,15 @@ $[]$  $[]$  $[]$
 [22
 
 ]
-<regression-line-1.png, id=154, 295.1025pt x 298.11375pt>
-File: regression-line-1.png Graphic file (type png)
-<use regression-line-1.png>
-Package pdftex.def Info: regression-line-1.png  used on input line 131.
-(pdftex.def)             Requested size: 159.333pt x 160.96083pt.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [23
 
- <./regression-line-1.png>]
-<regression-line-2.png, id=160, 326.21875pt x 304.13625pt>
-File: regression-line-2.png Graphic file (type png)
-<use regression-line-2.png>
-Package pdftex.def Info: regression-line-2.png  used on input line 131.
-(pdftex.def)             Requested size: 159.333pt x 148.55006pt.
+]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 253.
 
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
@@ -1819,33 +1739,21 @@ $[]$  $[]$  $[]$
 
 [24
 
- <./regression-line-2.png>]
-<regression-line-3.png, id=167, 317.185pt x 294.09875pt>
-File: regression-line-3.png Graphic file (type png)
-<use regression-line-3.png>
-Package pdftex.def Info: regression-line-3.png  used on input line 131.
-(pdftex.def)             Requested size: 159.333pt x 147.7401pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [25
 
- <./regression-line-3.png>]
-<regression-line-4.png, id=174, 753.81625pt x 333.245pt>
-File: regression-line-4.png Graphic file (type png)
-<use regression-line-4.png>
-Package pdftex.def Info: regression-line-4.png  used on input line 131.
-(pdftex.def)             Requested size: 358.50229pt x 158.48116pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [26
 
- <./regression-line-4.png>]
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1860,32 +1768,20 @@ $[]$  $[]$  $[]$
 [28
 
 ]
-<residuals-1.png, id=190, 916.42375pt x 453.695pt>
-File: residuals-1.png Graphic file (type png)
-<use residuals-1.png>
-Package pdftex.def Info: residuals-1.png  used on input line 170.
-(pdftex.def)             Requested size: 358.50229pt x 177.48032pt.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [29
 
- <./residuals-1.png>]
-<residuals-2.png, id=196, 922.44624pt x 262.9825pt>
-File: residuals-2.png Graphic file (type png)
-<use residuals-2.png>
-Package pdftex.def Info: residuals-2.png  used on input line 170.
-(pdftex.def)             Requested size: 358.50229pt x 102.20561pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [30
 
- <./residuals-2.png>]
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1900,84 +1796,48 @@ $[]$  $[]$  $[]$
 [32
 
 ]
-<outliers-1.png, id=214, 301.125pt x 423.5825pt>
-File: outliers-1.png Graphic file (type png)
-<use outliers-1.png>
-Package pdftex.def Info: outliers-1.png  used on input line 235.
-(pdftex.def)             Requested size: 143.14612pt x 201.36142pt.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [33
 
- <./outliers-1.png>]
-<outliers-2.png, id=220, 296.10625pt x 420.57124pt>
-File: outliers-2.png Graphic file (type png)
-<use outliers-2.png>
-Package pdftex.def Info: outliers-2.png  used on input line 235.
-(pdftex.def)             Requested size: 141.77243pt x 201.36142pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [34
 
- <./outliers-2.png>]
-<outliers-3.png, id=226, 298.11375pt x 420.57124pt>
-File: outliers-3.png Graphic file (type png)
-<use outliers-3.png>
-Package pdftex.def Info: outliers-3.png  used on input line 235.
-(pdftex.def)             Requested size: 142.73361pt x 201.36142pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [35
 
- <./outliers-3.png>]
-<outliers-4.png, id=232, 297.11pt x 434.62375pt>
-File: outliers-4.png Graphic file (type png)
-<use outliers-4.png>
-Package pdftex.def Info: outliers-4.png  used on input line 235.
-(pdftex.def)             Requested size: 137.65149pt x 201.36142pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [36
 
- <./outliers-4.png>]
-<outliers-5.png, id=238, 296.10625pt x 432.61626pt>
-File: outliers-5.png Graphic file (type png)
-<use outliers-5.png>
-Package pdftex.def Info: outliers-5.png  used on input line 235.
-(pdftex.def)             Requested size: 137.82352pt x 201.36142pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [37
 
- <./outliers-5.png>]
-<outliers-6.png, id=245, 299.1175pt x 433.62pt>
-File: outliers-6.png Graphic file (type png)
-<use outliers-6.png>
-Package pdftex.def Info: outliers-6.png  used on input line 235.
-(pdftex.def)             Requested size: 138.90106pt x 201.36142pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [38
 
- <./outliers-6.png>]
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -1985,61 +1845,34 @@ $[]$  $[]$  $[]$
 [39
 
 ]
-<outliers-important.png, id=256, 557.08125pt x 332.24126pt>
-File: outliers-important.png Graphic file (type png)
-<use outliers-important.png>
-Package pdftex.def Info: outliers-important.png  used on input line 235.
-(pdftex.def)             Requested size: 358.50229pt x 213.81488pt.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [40
 
- <./outliers-important.png>]
-<correlations-1.png, id=262, 872.25874pt x 531.9875pt>
-File: correlations-1.png Graphic file (type png)
-<use correlations-1.png>
-Package pdftex.def Info: correlations-1.png  used on input line 246.
-(pdftex.def)             Requested size: 318.67209pt x 194.35646pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [41
 
- <./correlations-1.png>]
-<correlations-2.png, id=268, 881.2925pt x 287.0725pt>
-File: correlations-2.png Graphic file (type png)
-<use correlations-2.png>
-Package pdftex.def Info: correlations-2.png  used on input line 246.
-(pdftex.def)             Requested size: 358.50229pt x 116.77621pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [42
 
- <./correlations-2.png>]
-<anscombe_quartet.png, id=274, 642.4pt x 466.74374pt>
-File: anscombe_quartet.png Graphic file (type png)
-<use anscombe_quartet.png>
-Package pdftex.def Info: anscombe_quartet.png  used on input line 246.
-(pdftex.def)             Requested size: 277.13823pt x 201.36142pt.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [43
 
- <./anscombe_quartet.png>]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 250.
-
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -2075,19 +1908,13 @@ $[]$  $[]$  $[]$
 [48
 
 ]
-<parameter-space.png, id=309, 914.41624pt x 964.60374pt>
-File: parameter-space.png Graphic file (type png)
-<use parameter-space.png>
-Package pdftex.def Info: parameter-space.png  used on input line 297.
-(pdftex.def)             Requested size: 214.73436pt x 226.52919pt.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [49
 
- <./parameter-space.png>]
+]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -2123,9 +1950,6 @@ $[]$  $[]$  $[]$
 [54
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 379.
-
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
@@ -2147,18 +1971,55 @@ $[]$  $[]$  $[]$
 [57
 
 ]
+<non-linear-boundary.png, id=323, 305.14pt x 235.88126pt>
+File: non-linear-boundary.png Graphic file (type png)
+<use non-linear-boundary.png>
+Package pdftex.def Info: non-linear-boundary.png  used on input line 393.
+(pdftex.def)             Requested size: 278.83578pt x 215.55568pt.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 393.
+
+Overfull \vbox (56.34758pt too high) detected at line 393
+ []
+
+
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [58
 
-] (./sk_linreg.py)
+ <./non-linear-boundary.png>]
 Overfull \hbox (63.56435pt too wide) has occurred while \output is active
 $[]$  $[]$  $[]$  
  []
 
 [59
+
+]
+Overfull \hbox (63.56435pt too wide) has occurred while \output is active
+$[]$  $[]$  $[]$  
+ []
+
+[60
+
+]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 397.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) (./sk_linreg.py)
+Overfull \hbox (63.56435pt too wide) has occurred while \output is active
+$[]$  $[]$  $[]$  
+ []
+
+[61
+
+] (./sk_logreg.py)
+Overfull \hbox (63.56435pt too wide) has occurred while \output is active
+$[]$  $[]$  $[]$  
+ []
+
+[62
 
 ]
 \tf@nav=\write6
@@ -2170,39 +2031,39 @@ $[]$  $[]$  $[]$
 \tf@snm=\write8
 \openout8 = `talk.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./talk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 429.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
 Package rerunfilecheck Info: File `talk.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20755 strings out of 494821
- 368361 string characters out of 6177890
- 477306 words of memory out of 5000000
- 23410 multiletter control sequences out of 15000+600000
- 68298 words of font info for 105 fonts, out of 8000000 for 9000
+ 20604 strings out of 494821
+ 366229 string characters out of 6177890
+ 463297 words of memory out of 5000000
+ 23317 multiletter control sequences out of 15000+600000
+ 60234 words of font info for 89 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 57i,16n,55p,817b,1060s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,14n,55p,817b,1055s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /mathabx-type1/matha10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ma
-thabx-type1/matha8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathab
-x-type1/mathx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on talk.pdf (59 pages, 1160248 bytes).
+thabx-type1/matha12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/matha
+bx-type1/matha8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-t
+ype1/mathx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on talk.pdf (62 pages, 284384 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 119 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
