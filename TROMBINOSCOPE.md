@@ -8,6 +8,10 @@ Nicolas Goureau
 
 ![Nicolas Goureau](images/nicolasgoureau.jpg)
 
+Guillaume Fourny
+
+![Guillaume Fourny](images/guillaumefourny.jpg)
+
 Benjamin Brasseur
 
 ![Benjamin Brasseur](images/benjaminbrasseur.jpg)
