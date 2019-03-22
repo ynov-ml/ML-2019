@@ -7,3 +7,6 @@ Jeff Abrahamson
 Nicolas Goureau
 
 ![Nicolas Goureau](images/nicolasgoureau.jpg)
+
+Tanguy Badier
+![Tanguy Badier](images/tanguybadier.jpg)
