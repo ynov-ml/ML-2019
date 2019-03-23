@@ -1,5 +1,21 @@
 # Annonces
 
+## [2019-03-22]
+
+La fonction
+[`test_train_split`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+vous aidera à faire la division entre test et train.
+
+Si vous voulez, il existe également un voting classifieur :
+[`VotingClassifier`](https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier).
+
+Pour sortir les vecteurs d'une seule classe, vous pourriez trouver
+efficace
+[`numpy.select`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.select.html).
+Voir également [cet
+exemple](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_function_transformer.html).
+
+
 ## [2019-03-21]
 
 Pour vendredi 2019-03-22 :

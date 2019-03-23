@@ -13,11 +13,12 @@
 * travail en groupe (non-présentiel) : 13h-17h
 
 ## jeudi 28 mars
-* 13h-17h
+* cours présentiel : 13h-17h
+* possibilité de temps de travail en groupe à la fin
 
 ## vendredi 29 mars
-* 8h-12h
-* 13h-17h
+* cours présentiel : 8h-12h
+* travail en groupe (non-présentiel) : 13h-17h
 
 ## jeudi 4 avril
 * 8h-12h
