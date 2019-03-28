@@ -16,6 +16,10 @@ Benjamin Brasseur
 
 ![Benjamin Brasseur](images/benjaminbrasseur.jpg)
 
+Fournier Matthieu
+
+![Benjamin Brasseur](images/matthieu_fournier.jpg)
+
 Tanguy Badier
 
 ![Tanguy Badier](images/tanguybadier.jpg)
