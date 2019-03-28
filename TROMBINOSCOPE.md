@@ -19,3 +19,7 @@ Benjamin Brasseur
 Tanguy Badier
 
 ![Tanguy Badier](images/tanguybadier.jpg)
+
+Clément Caillaud
+
+![Clément Caillaud](images/clementcaillaud.png)
