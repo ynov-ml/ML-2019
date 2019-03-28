@@ -27,3 +27,8 @@ Tanguy Badier
 Clément Caillaud
 
 ![Clément Caillaud](images/clementcaillaud.png)
+
+Alexandre Desvallées
+
+![Alexandre Desvallées](images/AlexandreDesvallees.jpg)
+
