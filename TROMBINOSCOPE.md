@@ -39,3 +39,7 @@ Fournier Matthieu
 Kevin Pautonnier
 
 ![Kevin Pautonnier](images/kevinpautonnier.jpg)
+
+Florian Boche
+
+![Florian Boche](images/FlorianBoche.jpg)
