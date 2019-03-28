@@ -19,3 +19,7 @@ Benjamin Brasseur
 Tanguy Badier
 
 ![Tanguy Badier](images/tanguybadier.jpg)
+
+Alexandre Desvallées
+
+![Alexandre Desvallées](images/AlexandreDesvallees.jpg)
