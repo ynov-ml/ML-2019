@@ -11,4 +11,6 @@ Tenir en ordre lexicographique par nom.
 
 [Florian Boche](https://github.com/Nair0fl/CoursMachineLearning)
 
+[Clément Caillaud](https://github.com/ClementCaillaud/MachineLearning_ynov)
+
 [Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
