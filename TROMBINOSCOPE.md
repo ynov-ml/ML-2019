@@ -1,4 +1,4 @@
-# Trombinoscope
+    # Trombinoscope
 
 Jeff Abrahamson
 
@@ -19,3 +19,7 @@ Benjamin Brasseur
 Tanguy Badier
 
 ![Tanguy Badier](images/tanguybadier.jpg)
+
+Kevin Pautonnier
+
+![Kevin Pautonnier](images/kevinpautonnier.jpg)
