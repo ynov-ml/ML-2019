@@ -1,4 +1,4 @@
-# Trombinoscope
+    # Trombinoscope
 
 Jeff Abrahamson
 
@@ -32,3 +32,6 @@ Alexandre Desvallées
 
 ![Alexandre Desvallées](images/AlexandreDesvallees.jpg)
 
+Kevin Pautonnier
+
+![Kevin Pautonnier](images/kevinpautonnier.jpg)
