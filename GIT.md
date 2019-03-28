@@ -8,3 +8,5 @@ Tenir en ordre lexicographique par nom.
 [Jeff Abrahamson](https://github.com/JeffAbrahamson/dotfiles)
 
 ## Étudiants
+
+[Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
