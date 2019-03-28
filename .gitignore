@@ -5,3 +5,4 @@ venv
 *.snm
 *.nav
 *.toc
+*.out
