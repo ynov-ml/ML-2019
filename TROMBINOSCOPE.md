@@ -1,4 +1,4 @@
-# Trombinoscope
+    # Trombinoscope
 
 Jeff Abrahamson
 
@@ -20,6 +20,22 @@ Tanguy Badier
 
 ![Tanguy Badier](images/tanguybadier.jpg)
 
+Clément Caillaud
+
+![Clément Caillaud](images/clementcaillaud.png)
+
 Yanis Dando
 
 ![Yanis Dando](images/yanisdando.png)
+
+Alexandre Desvallées
+
+![Alexandre Desvallées](images/AlexandreDesvallees.jpg)
+
+Fournier Matthieu
+
+![Fournier Matthieu](images/matthieu_fournier.jpg)
+
+Kevin Pautonnier
+
+![Kevin Pautonnier](images/kevinpautonnier.jpg)
