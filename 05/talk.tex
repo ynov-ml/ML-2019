@@ -6,6 +6,10 @@
 \begin{document}
 
 \begin{frame}
+  \vphrase{Recommendation}
+\end{frame}
+
+\begin{frame}
   \frametitle{Definition}
 
   \vspace{1cm}
@@ -99,16 +103,16 @@
 
   Advantages\vspace{-2mm}
   \begin{itemize}
-  \item [yes!] No need for community
-  \item [yes!] Possible to compare items 
+  \item No need for community
+  \item Possible to compare items 
   \end{itemize}
 
   \medskip
   Disadvantages\vspace{-2mm}
   \begin{itemize}
-  \item [no] Understand content
-  \item [yes] Cold start problem
-  \item [no] Serendipity
+  \item Understand content
+  \item Cold start problem
+  \item Serendipity
   \end{itemize}
 \end{frame}
 
@@ -119,17 +123,17 @@
 
   Advantages\vspace{-2mm}
   \begin{itemize}
-  \item [yes!] No need to understand content
-  \item [yes!] Serendipity
-  \item [yes!] Learn market
+  \item need to understand content
+  \item Serendipity
+  \item Learn market
   \end{itemize}
 
   \medskip
   Disadvantages\vspace{-2mm}
   \begin{itemize}
-  \item [no] User feedback
-  \item [yes] Cold start problem (users)
-  \item [yes] Cold start problem (items)
+  \item User feedback
+  \item Cold start problem (users)
+  \item Cold start problem (items)
   \end{itemize}
 \end{frame}
 
@@ -140,17 +144,17 @@
 
   Advantages\vspace{-2mm}
   \begin{itemize}
-  \item [yes!] Deterministic
-  \item [yes!] Certainty
-  \item [no!] Cold start problem
-  \item [yes!] Market knowledge
+  \item Deterministic
+  \item Certainty
+  \item Cold start problem
+  \item Market knowledge
   \end{itemize}
 
   \medskip
   Disadvantages\vspace{-2mm}
   \begin{itemize}
-  \item [yes] Studies to bootstrap
-  \item [yes] Static model, doesn't learn from trends
+  \item Studies to bootstrap
+  \item Static model, doesn't learn from trends
   \end{itemize}
 \end{frame}
 
@@ -288,7 +292,7 @@
 \begin{frame}
   \frametitle{cosine similarity}
 
-  \only<1>{\green{or: \textit{mesure cosinus}, \textit{Similarité cosinus}}}
+  \only<1>{\green{or: \textit{mesure cosinus}, \textit{similarité cosinus}}}
 
   \vspace{1cm}
   Similarity:
@@ -316,11 +320,15 @@
 \end{frame}
 
 \begin{frame}
+  \vphrase{Text: an application of cosine similarity}
+\end{frame}
+
+\begin{frame}
   \frametitle{Texts: TF-IDF}
   
   \begin{itemize}
   \item Vectors of word frequencies
-  \item Frequency $nRightarrow$ significance 
+  \item Frequency $\nRightarrow$ significance 
   \item<2> Term Frequency - Inverse Document Frequency
   \end{itemize}
 \end{frame}
@@ -368,15 +376,15 @@
   \vspace{1cm}
 
   \vspace{15mm} % A fragile hack.
-  \centerline{\fcolorbox{blue}{white}{\hspace{55mm}\rule{0pt}{1.45ex}}}
+  \centerline{\fcolorbox{blue}{white}{\hspace{63mm}\rule{0pt}{1.45ex}}}
   \vspace{-15mm}
   
-  \centerline{\begin{tabular}{l|ccccc}
-      & $I_1$ & $I_2$ & $I_3$ & $I_4$ & $I_5$ \\
+  \centerline{\begin{tabular}{l|ccccccc}
+      & $I_1$ & $I_2$ & $I_3$ & $I_4$ & $I_5$ & $I_6$ & $I_7$ \\
       \hline
-      $U_1$ & 3 & & & & \\
-      $U_2$ & & & 5 & 1 & 4 \\
-      $U_3$ & & 2 & & 5 & 1
+      $U_1$ & 3 & & & & 2 & 4 & \\
+      $U_2$ & & & 5 & 1 & 4 & & 3 \\
+      $U_3$ & & 2 & & 5 & 1 & 5 & 
     \end{tabular}}
 
   \vspace{1cm}
@@ -494,7 +502,7 @@
     }
 \end{frame}
 
-\begin{frame}{Utility Matrix : Estimate $m_{u,i}$}
+\begin{frame}{Utility Matrix : Estimate $m_{u,i}$ (naive averaging)}
 
   \vspace{1cm}
   \centerline{\begin{tabular}{l|ccccc}
@@ -736,30 +744,6 @@
   \item Curse of Dimensionality
   \item Scalability \only<2>{\gray{$10^7$ clients, $10^6$ objets}}
   \end{itemize}
-\end{frame}
-
-\begin{frame}{}
-
-\end{frame}
-
-\begin{frame}{}
-
-\end{frame}
-
-\begin{frame}{}
-
-\end{frame}
-
-\begin{frame}{}
-
-\end{frame}
-
-\begin{frame}{}
-
-\end{frame}
-
-\begin{frame}{}
-
 \end{frame}
 
 
