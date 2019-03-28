@@ -19,3 +19,7 @@ Benjamin Brasseur
 Tanguy Badier
 
 ![Tanguy Badier](images/tanguybadier.jpg)
+
+Yanis Dando
+
+![Yanis Dando](images/yanisdando.png)
