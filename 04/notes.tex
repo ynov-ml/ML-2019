@@ -1,0 +1,187 @@
+\input ../notes-header.tex
+
+\begin{document}
+
+\notetitle{J01}{Recommendation}
+
+Given data about a user, his environment, and some items of in-
+terest (training data), determine items to recommend.
+
+We don’t have to find the max $k$.\\
+It’s enough to find k within some max $n$.
+
+Examples:
+\begin{itemize}
+\item Amazon
+\item Google New (or Le Monde, etc.)
+\item Facebook
+\item Twitter
+\item Medical testing
+\item App store / play store
+\item Youtube
+\item Advertising
+\item Netflix, last.fm, spotify, pandora, \dots
+\item Browser (URL recommendations)
+\item Search
+\end{itemize}
+
+Client value proposition:
+\begin{itemize}
+\item Find opportunities
+\item Reduce choice
+\item Explore options
+\item Discover long tails
+\item Recreation
+\end{itemize}
+
+Provider value proposition:
+\begin{itemize}
+\item Offer unique or additional service (beyond competitors)
+\item Customer trust, loyalty
+\item Increase sales, CTR, conversions
+\item Better understand customers
+\end{itemize}
+
+\textbf{Roughly:}
+
+\begin{tabular}{|p{5.7cm}|p{4cm}|}
+  \hline
+  \topstrut\hbox{Content-based filtering}
+  \hbox{\it (filtrage basée sur le contenu)}
+  &
+    More things similar to what I like\bottomstrut
+  \\
+  \hline
+  \topstrut\hbox{Collaborative filtering}
+  \hbox{\it (filtrage collaboratif)}
+  &
+    More of what other people who like what I like like
+    \bottomstrut
+  \\
+  \hline
+  \topstrut\hbox{Knowledge-based filtering}
+  \hbox{\it (filtrage basée sur connaissance)}\bottomstrut
+  &
+    More of what I need.\bottomstrut
+  \\
+  \hline
+\end{tabular}
+
+\textbf{Content-based filtering}
+
+\textit{\purple{More things similar to what I like}}\\
+\textit{\red{Plus de ce qui ressemble à ce que j'aime}}
+
+Advantages\vspace{-2mm}
+\begin{itemize}
+\item [yes!] No need for community
+\item [yes!] Possible to compare items 
+\end{itemize}
+
+\medskip
+Disadvantages\vspace{-2mm}
+\begin{itemize}
+\item [no] Understand content
+\item [yes] Cold start problem
+\item [no] Serendipity
+\end{itemize}
+
+
+\textbf{Collaborative filtering}
+
+\textit{\purple{More of what other people who like what I like like}}\\
+\textit{\red{Plus de ce que d'autres qui aiment ce que j'aime aiment}}
+
+Advantages
+
+\begin{itemize}
+\item [yes!] No need to understand content
+\item [yes!] Serendipity
+\item [yes!] Learn market
+\end{itemize}
+
+Disadvantages
+
+\begin{itemize}
+\item [no] User feedback
+\item [yes] Cold start problem (users)
+\item [yes] Cold start problem (items)
+\end{itemize}
+
+
+\textbf{Knowledge-based filtering}
+
+\textit{\purple{More of what I need}}\\
+\textit{\red{Plus de ce qu'il faut}}
+
+Advantages
+
+\begin{itemize}
+\item [yes!] Deterministic
+\item [yes!] Certainty
+\item [no!] Cold start problem
+\item [yes!] Market knowledge
+\end{itemize}
+
+Disadvantages:
+
+\begin{itemize}
+\item [yes] Studies to bootstrap
+\item [yes] Static model, doesn't learn from trends
+\end{itemize}
+
+\textbf{Utility Matrix}
+
+\begin{itemize}
+\item Users (utilisateurs)
+\item Items (objets)
+\end{itemize}
+
+The goal is to fill in the blanks.
+
+\textbf{Example: books sales at Amazon.}
+
+\begin{tabular}{l|ccccc}
+  & $I_1$ & $I_2$ & $I_3$ & $I_4$ & $I_5$ \\
+  \hline
+  $U_1$ & 1 & & & & \\
+  $U_2$ & & & 1 & 1 & 1 \\
+  $U_3$ & & 1 & & 1 & 1
+\end{tabular}
+
+\textbf{Example: film advice at Netflix.}
+
+\begin{tabular}{l|ccccc}
+  & $I_1$ & $I_2$ & $I_3$ & $I_4$ & $I_5$ \\
+  \hline
+  $U_1$ & 3 & & & & \\
+  $U_2$ & & & 5 & 1 & 4 \\
+  $U_3$ & & 2 & & 5 & 1
+\end{tabular}
+
+{\it But thousands or millions of columns and rows.}
+
+How do we make the matrix?
+\begin{itemize}
+\item Ask users
+\item Observe users
+\end{itemize}
+
+That's usually expensive\dots
+
+\textbf{Examples: you are the users, what are the objects}
+\begin{itemize}
+\item Films
+\item Books
+\item News
+\item Images
+\end{itemize}
+
+\textbf{For tomorrow:}
+\begin{itemize}
+\item Create a git repo, ideally identiable as you.  Send a PR to add it to GIT.md.
+\item Add your MNIST code to your repo, in a directory called something recognisable.
+\item If GDPR concerns, tell me.  But your career\dots
+\end{itemize}
+
+\end{document}
