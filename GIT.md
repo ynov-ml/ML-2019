@@ -10,3 +10,5 @@ Tenir en ordre lexicographique par nom.
 ## Étudiants
 
 [Florian Boche](https://github.com/Nair0fl/CoursMachineLearning)
+
+[Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
