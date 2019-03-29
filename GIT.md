@@ -1,4 +1,4 @@
-# Git repos for ML at Ynov, Spring 2019.
+﻿# Git repos for ML at Ynov, Spring 2019.
 
 Ajouter le liens à votre repo git avec texte qui vous identifie.
 Tenir en ordre lexicographique par nom.
@@ -15,8 +15,14 @@ Les répértoires à créer :
 
 [Florian Boche](https://github.com/Nair0fl/CoursMachineLearning)
 
+[Benjamin Brasseur](https://github.com/benjaminbra/ML-BBR)
+
 [Clément Caillaud](https://github.com/ClementCaillaud/MachineLearning_ynov)
+
+[Alexandre Desvallées](https://github.com/AlexDesvallees/Alex-ML)
+
+[Matthieu Fournier](https://github.com/LordInateur/ML_2019_matthieuf_exo)
 
 [Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
 
-[Alexandre Desvallées](https://github.com/AlexDesvallees/Alex-ML)
+[Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
