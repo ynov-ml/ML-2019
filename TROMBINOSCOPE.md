@@ -38,8 +38,12 @@ Fournier Matthieu
 
 Kevin Pautonnier
 
-![Kevin Pautonnier](images/kevinpeutonnier.jpg)
+![Kevin Pautonnier](images/kevinpautonnier.jpg)
 
 Florian Boche
 
 ![Florian Boche](images/FlorianBoche.jpg)
+
+Matthieu Saint-Martin
+
+![Matthieu Saint-Martin](images/matthieusaintmartin.jpeg)
