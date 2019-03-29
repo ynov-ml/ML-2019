@@ -28,6 +28,8 @@ Les répértoires à créer :
 
 [Matthieu Fournier](https://github.com/LordInateur/ML_2019_matthieuf_exo)
 
+[Guillaume Fourny](https://github.com/gfourny/Machine-Learning)
+
 [Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
 
 [Kevin Pautonnier](https://github.com/KevinPautonnier/MachineLearning.git)
