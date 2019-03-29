@@ -30,4 +30,6 @@ Les répértoires à créer :
 
 [Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
 
+[Kevin Pautonnier](https://github.com/KevinPautonnier/MachineLearning.git)
+
 [Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
