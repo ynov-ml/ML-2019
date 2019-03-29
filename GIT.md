@@ -13,6 +13,8 @@ Les répértoires à créer :
 
 ## Étudiants
 
+[Tanguy Badier](https://github.com/Rock3f/Exercice-Machine-Learning)
+
 [Florian Boche](https://github.com/Nair0fl/CoursMachineLearning)
 
 [Benjamin Brasseur](https://github.com/benjaminbra/ML-BBR)
