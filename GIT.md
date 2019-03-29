@@ -18,3 +18,5 @@ Les répértoires à créer :
 [Clément Caillaud](https://github.com/ClementCaillaud/MachineLearning_ynov)
 
 [Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
+
+[Alexandre Desvallées](https://github.com/AlexDesvallees/Alex-ML)
