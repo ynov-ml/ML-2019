@@ -15,8 +15,12 @@ Les répértoires à créer :
 
 [Florian Boche](https://github.com/Nair0fl/CoursMachineLearning)
 
+[Benjamin Brasseur](https://github.com/benjaminbra/ML-BBR)
+
 [Clément Caillaud](https://github.com/ClementCaillaud/MachineLearning_ynov)
+
+[Matthieu Fournier](https://github.com/LordInateur/ML_2019_matthieuf_exo)
 
 [Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
 
-[Matthieu Fournier](https://github.com/LordInateur/ML_2019_matthieuf_exo)
+[Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
