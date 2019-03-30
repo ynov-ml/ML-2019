@@ -47,3 +47,7 @@ Florian Boche
 Matthieu Saint-Martin
 
 ![Matthieu Saint-Martin](images/matthieusaintmartin.jpeg)
+
+Antoine Gosset
+
+![Antoine Gosset](images/antoinegosset.jpg)
