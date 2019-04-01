@@ -3,14 +3,25 @@
 Ajouter le liens à votre repo git avec texte qui vous identifie.
 Tenir en ordre lexicographique par nom.
 
-Les répértoires à créer :
+## Les répértoires à créer (projets)
 
-- MNIST : Utiliser une régression logistique (disponible dans scikit-learn) pour construire un classifieur, et OvO et OvA.
-- Le logarithme naturel : (1) écrire un programme qui calcule la valeur de $e$ en utilisant la série de Taylor, montrant la convergence de la série, et (2) écrire un programme qui calcule le facteur (exprimé comme une limite) dans la dérivé de $n^x$.
+### MNIST
 
-## Exemple
+Utiliser une régression logistique (disponible dans scikit-learn) pour
+construire un classifieur, et OvO et OvA.
 
-[Jeff Abrahamson](https://github.com/JeffAbrahamson/dotfiles)
+### Le logarithme naturel
+
+1.  Écrire un programme qui calcule la valeur de $e$ en utilisant la
+série de Taylor, montrant la convergence de la série.
+
+2.  Écrire un programme qui calcule le facteur (exprimé comme une
+limite) dans la dérivé de $n^x$.
+
+### Recommendation
+
+Utiliser le jeu de données MovieLens pour créer un moteur de recommendation.
+
 
 ## Étudiants
 
