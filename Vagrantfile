@@ -78,7 +78,7 @@ Vagrant.configure("2") do |config|
   $script_pre = <<SCRIPT_PRE
     sudo apt-get update
     sudo apt-get install -y git python3-all ipython3 python3-virtualenv virtualenv
-    sudo apt-get install -y emacs python3-setuptools gcc g++ libpython3-dev
+    sudo apt-get install -y emacs python3-setuptools gcc g++ libpython3-dev python3-tk
     sudo locale-gen --purge fr_FR.UTF-8
     echo -e 'LANG="fr_FR.utf-8"\nLANGUAGE="fr_FR.utf-8"\n' | sudo tee /etc/default/locale
     echo -e 'LC_ALL=fr_FR.utf-8' | sudo tee -a /etc/default/locale
