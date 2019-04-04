@@ -48,3 +48,5 @@ Utiliser le jeu de données MovieLens pour créer un moteur de recommendation.
 [Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
 
 [Antoine Gosset](https://github.com/AntoineGOSSET/Machine-Learning)
+
+[Grégoire Meunier](https://github.com/Grigusky/ml_2019)
