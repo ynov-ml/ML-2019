@@ -33,22 +33,25 @@ Utiliser le jeu de données MovieLens pour créer un moteur de recommendation.
 
 [Clément Caillaud](https://github.com/ClementCaillaud/MachineLearning_ynov)
 
+[Benoît Cochet](https://github.com/BenoitCochet/ML)
+
 [Yanis Dando](https://github.com/Mokui/code_ML)
 
 [Alexandre Desvallées](https://github.com/AlexDesvallees/Alex-ML)
+
+[Antoine Drouard](https://github.com/Coblestone/ML-2019)
 
 [Matthieu Fournier](https://github.com/LordInateur/ML_2019_matthieuf_exo)
 
 [Guillaume Fourny](https://github.com/gfourny/Machine-Learning)
 
+[Antoine Gosset](https://github.com/AntoineGOSSET/Machine-Learning)
+
 [Nicolas Goureau](https://github.com/Killy85/MachineLearningExercises)
+
+[Grégoire Meunier](https://github.com/Grigusky/ml_2019)
 
 [Kevin Pautonnier](https://github.com/KevinPautonnier/MachineLearning.git)
 
 [Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
 
-[Antoine Gosset](https://github.com/AntoineGOSSET/Machine-Learning)
-
-[Grégoire Meunier](https://github.com/Grigusky/ml_2019)
-
-[Antoine Drouard](https://github.com/Coblestone/ML-2019)
