@@ -1,3 +1,4 @@
+# coding: utf-8
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -44,6 +45,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder "../ML-2019-étudiants", "/ML-2019-étudiants", SharedFoldersEnableSymlinksCreate: true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -75,9 +77,11 @@ Vagrant.configure("2") do |config|
 
   $script_pre = <<SCRIPT_PRE
     sudo apt-get update
-    sudo apt-get install -y python3-all git
+    sudo apt-get install -y git python3-all ipython3 python3-virtualenv virtualenv
+    sudo apt-get install -y emacs python3-setuptools
     sudo locale-gen --purge fr_FR.UTF-8
-    echo -e 'LANG="fr_FR.UTF-8"\nLANGUAGE="fr_FR.UFT-8"\n' | sudo tee /etc/default/locale
+    echo -e 'LANG="fr_FR.utf-8"\nLANGUAGE="fr_FR.utf-8"\n' | sudo tee /etc/default/locale
+    echo -e 'LC_ALL=fr_FR.utf-8' | sudo tee -a /etc/default/locale
 SCRIPT_PRE
 
   config.vm.provision "shell", privileged: false, inline: $script_pre
