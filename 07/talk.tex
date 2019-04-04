@@ -12,9 +12,14 @@
   \cimg{under-overfitting.png}
 \end{frame}
 
-RF details
-SVM details
-hyperparameter search
+\begin{frame}{Random Forest}
+  scikit-learn behaviour:
+  \begin{itemize}
+  \item Sample size is full training set.
+  \item If \texttt{bootstrap=true} then sample with replacement.
+  \item If $n=n'$, expect $1-1/e \approx 63.2\%$ repeats.
+  \end{itemize}
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
