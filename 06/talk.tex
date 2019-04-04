@@ -29,8 +29,7 @@
   \vphrase{Review}
 \end{frame}
 
-\begin{frame}
-  \frametitle{What is Machine Learning?}
+\begin{frame}{What is Machine Learning?}
   Learning is what we do when we can't explain how.
   \begin{itemize}
   \item Supervised
@@ -39,8 +38,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Lots of maths}
+\begin{frame}{Lots of maths}
   We'll try to ignore it, but it's there\dots
   \begin{itemize}
   \item Vector spaces and linear algebra
@@ -52,8 +50,7 @@
   The curse of dimensionality.
 \end{frame}
 
-\begin{frame}
-  \frametitle{Data Science}
+\begin{frame}{Data Science}
   \begin{enumerate}
   \item Define the question of interest
   \item Get the data
@@ -65,8 +62,7 @@
   \end{enumerate}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Data}
+\begin{frame}{Data}
   \only<1>{\vphrase{Observational vs experimental}}
   \only<2>{\vphrase{Anecdote: it doesn't accumulate to be data.}}
   \only<3>{\cimgh{bias-variance.png}}
@@ -76,8 +72,7 @@
   \only<7>{\vphrase{Outliers: don't ignore them!}}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Feature Engineering}
+\begin{frame}{Feature Engineering}
   \begin{enumerate}
   \item Brainstorm
   \item Pick some
@@ -87,8 +82,7 @@
   \end{enumerate}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Easy Features}
+\begin{frame}{Easy Features}
   \only<1>{\phrase{Text}\vspace{1cm}
     \centerline{bag of words}}
   \only<2>{\phrase{Images}\vspace{1cm}
@@ -96,8 +90,7 @@
   \only<3>{\vphrase{We'll see more}}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Linear Regression}
+\begin{frame}{Linear Regression}
   \only<1>{
     \textbf{Problem:}  $\{(x_i, y_i)\}$.
 
@@ -117,8 +110,7 @@
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{Residuals}
+\begin{frame}{Residuals}
   What's left over.
   \only<1>{
     \vspace{1cm}
@@ -142,8 +134,7 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Logistic regression}
+\begin{frame}{Logistic regression}
   \only<1>{\begin{bphrase}
       \begin{itemize}
       \item Binary output
@@ -163,8 +154,7 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{One vs Rest, One vs One}
+\begin{frame}{One vs Rest, One vs One}
   \only<1>{
     What I described yesterday:
     \begin{itemize}
@@ -192,8 +182,7 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Hyperparameters}
+\begin{frame}{Hyperparameters}
   \only<1>{
     \begin{itemize}
     \item The word hyperparameter is not well-defined.
@@ -206,8 +195,7 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Testing}
+\begin{frame}{Testing}
   \begin{itemize}
   \item Set aside (partition) data for testing (e.g., 70\% / 30\%)
   \item Learn on training set, test on testing set
@@ -231,8 +219,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-  \frametitle{The simple explanation}
+\begin{frame}{The simple explanation}
   \only<1>{
     \cimghh{zDBbD.png}
   }
@@ -283,8 +270,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}
-  \frametitle{Decision Trees}
+\begin{frame}{Decision Trees}
   \only<1>{
     % https://www.pexels.com/photo/blue-geeen-and-orange-parrot-37833/
     % https://static.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg
@@ -320,8 +306,7 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Decision Trees}
+\begin{frame}{Decision Trees}
   \only<1>{
     Variations
     \begin{itemize}
@@ -351,8 +336,7 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Boostrap aggregating = bagging}
+\begin{frame}{Boostrap aggregating = bagging}
   \only<1>{\phrase{Boostrap}
 
     A family of statistical methods using sampling with replacement.
@@ -391,8 +375,7 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Random subspace method}
+\begin{frame}{Random subspace method}
   \only<1>{
     \phrase{attribute bagging = feature bagging}
   }
@@ -405,11 +388,50 @@
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Random forests}
+\begin{frame}{Random forests}
   \only<1>{
     \vspace{1cm}
     \centerline{Combine \blue{bagging} with \blue{random subspace method}}
+  }
+\end{frame}
+
+\begin{frame}{scikit-learn}
+  \vspace{1cm}
+  \vbox{\tt
+    from sklearn.ensemble import RandomForestClassifier\\[5mm]
+
+    X = [[0, 0], [1, 1]]\\
+    Y = [0, 1]\\
+    clf = RandomForestClassifier(n\_estimators=10)\\
+    clf = clf.fit(X, Y)\\
+    clf.predict([[.6, .6]])
+  }
+
+  \only<2>{
+    \vspace{5mm}
+    \purple{\texttt{X} has size \texttt{[n\_samples, n\_features]}}
+    
+    \purple{\texttt{Y} has size \texttt{[n\_samples]}}
+  }
+\end{frame}
+
+\begin{frame}{scikit-learn}
+  \vspace{1cm}
+  \vbox{\tt
+    from sklearn.ensemble import RandomForestRegressor\\[5mm]
+
+    X = [[0, 0], [1, 1]]\\
+    Y = [0, 1]\\
+    clf = RandomForestRegressor(n\_estimators=10)\\
+    clf = clf.fit(X, Y)\\
+    clf.predict([[.6, .6]])
+  }
+
+  \only<2>{
+    \vspace{5mm}
+    \purple{\texttt{X} has size \texttt{[n\_samples, n\_features]}}
+    
+    \purple{\texttt{Y} has size \texttt{[n\_samples]}}
   }
 \end{frame}
 
