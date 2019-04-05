@@ -50,7 +50,9 @@ recommendation.
 
 *Répertoire : TP4_CART*
 
-Refaire MNIST avec une random forest.
+Refaire MNIST avec une random forest et avec SVM (+rbf).  Faire une
+comparaison des techniques : régression logistique (OvO, OvA), CART,
+et SVM.
 
 
 ## Étudiants
