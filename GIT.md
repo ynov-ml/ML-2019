@@ -136,8 +136,13 @@ Descriptif du projet (2-3 phrases).
 
 Projet d'initiation à la reconnaissance faciale
 
-* [Nikmabe](https://github.com/Killy85/game_ai_trainer) Nicolas, Benjamin, Kevin, Matthieu Fournier
+### [Nikmabe](https://github.com/Killy85/game_ai_trainer) 
+* Nicolas
+* Benjamin
+* Kevin
+* Matthieu Fournier
 
-Project aiming at creating a bot able to play a game the best way possible. 
-Using reinforcement learning, we will create an agent and make it learn our game.
+Project aiming at creating a bot able to play a game the best way
+possible.  Using reinforcement learning, we will create an agent and
+make it learn our game.
 
