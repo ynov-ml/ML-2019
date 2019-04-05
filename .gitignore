@@ -6,3 +6,4 @@ venv
 *.nav
 *.toc
 *.out
+.vagrant
