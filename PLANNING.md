@@ -39,10 +39,10 @@
 * travail en groupe (non-présentiel) (?) : 8h-12h
 * travail en groupe (non-présentiel) : 13h-17h
 
-## jeudi 3 mai
+## jeudi 2 mai
 * cours présentiel : 8h-12h
 * travail en groupe (non-présentiel) : 13h-17h
 
-## vendredi 4 mai
+## vendredi 3 mai
 * cours présentiel : 8h-12h
-* travail en groupe (non-présentiel) : 13h-17h
+* présentations de projets finaux : 13h-17h
