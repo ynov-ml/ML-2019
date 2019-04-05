@@ -1,0 +1,431 @@
+\input ../talk-header.tex
+\title
+{Machine Learning}
+\subtitle{}
+
+\begin{document}
+
+
+\talksection{Review and Concepts}
+
+\begin{frame}{Underfitting, overfitting}
+  \cimg{under-overfitting.png}
+\end{frame}
+
+\begin{frame}{Random Forest}
+  scikit-learn behaviour:
+  \begin{itemize}
+  \item Sample size is full training set.
+  \item If \texttt{bootstrap=true} then sample with replacement.
+  \item If $n=n'$, expect $1-1/e \approx 63.2\%$ repeats.
+  \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\talksection{Break}
+
+\talksection{PCA}
+
+\begin{frame}{Principle component analysis}
+
+  \sphrase{Analyse en composantes principales}
+\end{frame}
+
+\begin{frame}{Motivation}
+  \phrase{Remember the Curse of Dimensionality?}
+\end{frame}
+
+\begin{frame}[t]{Principle}
+
+  \vspace{1cm}
+  \begin{itemize}
+  \item Linear transformations have axes
+  \item Find them (eigenvectors of the covariance matrix)
+  \item Pick the biggest ones
+  \end{itemize}
+
+  \vspace{5mm}
+  \only<2>{\phrase{Fitting an $n$-dimensional ellipsoid to the data}}
+\end{frame}
+
+\begin{frame}{Uses}
+  \begin{itemize}
+  \item Exploratory data analysis
+  \item Compression
+  \item Visualisation
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Also known as}
+  \begin{itemize}
+  \item Discrete Kosambi-Karhunen–Loève transform (KLT) (signal processing)
+  \item Hotelling transform (multivariate quality control)
+  \item Proper orthogonal decomposition (POD) (ME)
+  \item Singular value decomposition (SVD), Eigenvalue decomposition (EVD) (linear algebra)
+  \item Etc.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{History}
+  \begin{itemize}
+  \item Invented by Karl Pearson in 1901
+  \item Invented (again) and named by Harold Hotelling in 1930's
+  \item Also known as\dots
+  \end{itemize}
+
+  \only<2>{\purple{It's a long list, every field uses a different name.}}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\talksection{Face Recognition}
+
+\begin{frame}
+  \frametitle{Eigenfaces}
+  \only<1>{
+    \begin{itemize}
+    \item Sirovich and Kirby (1987)
+    \item Turk and Pentland (1991)
+    \end{itemize}
+    \vfill
+    \prevwork{Turk, Matthew A and Pentland, Alex P. Face recognition
+      using eigenfaces. Computer Vision and Pattern Recognition,
+      1991. Proceedings {CVPR'91.}, {IEEE} Computer Society Conference
+      on 1991.}
+  }
+  \only<2>{ Want: a low-dimensional representation of a face
+
+    Plan: cluster simplified faces
+  }
+  \only<3>{
+    Viewed as compression:
+    \begin{itemize}
+    \item Use PCA on face images to form a set of basis features
+    \item Use eigenpictures to reconstruct original faces
+    \end{itemize}
+  }
+  \only<4>{
+    \cimghh{eigenface-reconstruction-opencv.png}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Eigenfaces algorithm}
+  
+  \only<1>{
+    Let $X=\{x_1, x_2, \dotsc, x_n\}$ be a random vector with observations $x_i\in\mathbb{R}^d$.
+
+    Compute
+    
+    \begin{displaymath}
+      \mu=\frac{1}{n} \sum_{i=1}^n x_i
+    \end{displaymath}
+
+    \vfill
+    \prevwork{OpenCV}
+  }
+  \only<2>{
+    Compute the covariance matrix $S$:
+    
+    \begin{align*}
+      S_{i,j} & = \cov(x_i, x_j) \\
+              & = \E[(x_i-\mu_i)(x_j-\mu_j)^T] \\[7mm]
+      S & = (S_{i,j})
+    \end{align*}
+  }
+  \only<3-4>{
+    Compute the eigenvectors of $S$:
+    
+    \begin{displaymath}
+      Sv_i = \lambda_i v_i \qquad i=1,2,\dotsc, n
+    \end{displaymath}
+
+    Sort the eigenvectors in decreasing order.
+
+    We want the $k$ principal components, so take the first $k$.
+
+    \only<4>{\blue{This is PCA.}}
+  }
+  \only<5>{
+    The $k$ principal components of the observed vector $x$ are then given by
+    
+    \begin{displaymath}
+      y=W^T(x-\mu)
+    \end{displaymath}
+    
+    where
+    \begin{displaymath}
+      W = \begin{bmatrix}
+        \vline & \vline & & \vline \\
+        v_1& v_2 & \cdots & v_k \\
+        \vline & \vline & & \vline
+      \end{bmatrix}
+    \end{displaymath}
+  }
+  \only<6>{
+    The reconstruction from the PCA basis is then
+    
+    \begin{displaymath}
+      x = Wy + \mu
+    \end{displaymath}
+  }
+  \only<7>{
+    So the plan is this:
+    \begin{itemize}
+    \item Project all training samples in the PCA subspace
+    \item Project the query into the PCA subspace
+    \item Find the nearest neighbour to the projected query image among
+      the projected training images
+    \end{itemize}
+  }
+  \only<8>{
+    \cimghh{eigenface-reconstruction-opencv.png}
+  }
+  \only<9>{
+    Some advantages:
+    \begin{itemize}
+    \item Easy, relatively inexpensive
+    \item Recognition cheaper than preprocessing
+    \item Reasonably large database possible
+    \end{itemize}
+  }
+  \only<10>{
+    Some problems:
+    \begin{itemize}
+    \item Need controlled environment
+    \item Needs straight-on view
+    \item Sensitive to expression changes
+    \item If lots of variance is external (e.g., lighting)\dots
+    \end{itemize}
+  }
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\talksection{Break}
+
+\begin{frame}
+  % https://www.pexels.com/photo/macro-shot-of-purple-flower-144282/
+  % https://static.pexels.com/photos/144282/pexels-photo-144282.jpeg
+  % CC0 license
+  \cimgwb{blue-flowers.jpg}
+  \vspace{-9cm}
+  \wphrase{questions?}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\talksection{Clustering}
+
+\begin{frame}
+  \frametitle{The Problem}
+  Have points $d = \{d_1, \dotsc, d_n\}$.
+
+  Have number of clusters $k$.
+
+  \vspace{5mm}
+  \textbf{Want:} an assignment of points to clusters
+\end{frame}
+
+\begin{frame}
+  \cimggg{cluster-1.png}
+\end{frame}
+
+\begin{frame}
+  \cimgh{cluster-2.png}
+\end{frame}
+
+\begin{frame}
+  \cimg{cluster-3.png}
+\end{frame}
+
+\begin{frame}
+  \cimg{cluster-4.png}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Algorithm}
+  \begin{enumerate}
+  \item Assign points to clusters at random
+  \item Repeat until stable:
+  \begin{enumerate}
+  \item Compute centroids of each cluster
+  \item Assign points to nearest centroid
+  \end{enumerate}
+  \end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Cost function}
+  \begin{mphrase}
+    \textrm{cost} = \sum_i \sum_j \left| x_j - \mu_i \right|
+  \end{mphrase}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Silhouette coefficient}
+  \only<1-2>{
+    Points $d = \{d_1, \dotsc, d_n\}$
+
+    Clusters $K = \{c_1, \dotsc, c_k\}$.
+
+    Cluster $c_{d_i}$ is the centroid of $d_i$.
+  }
+  
+  \only<2>{
+    \blue{Let $a_i$ be the average dissimilarity of $d_i$ to all
+      points in its cluster.}
+
+    \blue{Let $b_i$ be the least average dissimilarity of $d_i$ to any
+      cluster other than $k_{d_i}$}
+  }
+
+  \only<3-5>{
+    \begin{mphrase}
+      s_i = \frac{b_i - a_i}{\max\{a_i, b_i\}}
+    \end{mphrase}
+  }
+  
+  \only<4-5>{
+    \begin{mphrase}
+      s_i = \left\{
+        \begin{array}{ll}
+          1 - a_i/b_i & \mbox{ if } a_i < b_i \\[2mm]
+          0 & \mbox{ if } a_i = b_i \\[2mm]
+          b_i / a_i - 1 & \mbox{ if } a_i > b_i
+        \end{array}\right.
+    \end{mphrase}
+  }
+  
+  \only<5>{
+    So $s_i \in [-1, 1]$
+  }
+
+  \only<6>{
+    $s_i$ near 1 $\iff$ $d_i$ well clustered
+
+    $s_i$ near 0 $\iff$ $d_i$ on the border between two clusters
+
+    $s_i$ near -1 $\iff$ $d_i$ poorly clustered
+  }
+
+  \only<7>{
+    \begin{mphrase}
+      \textrm{Consider } \overline{s_i} \,\textrm{ over } i\in c_j \textrm{ for cluster } c_j
+    \end{mphrase}
+  }
+
+  \only<8>{
+    \begin{mphrase}
+      \textrm{Consider } \overline{s_i}
+    \end{mphrase}
+  }
+\end{frame}
+
+\begin{frame}
+  \vphrase{video time}
+\end{frame}
+
+\talksection{Anomaly Detection}
+
+\begin{frame}
+  \frametitle{Introduction to Anomaly Detection}
+  \only<1>{
+    \begin{itemize}
+    \item Supervised
+    \item Unsupervised
+    \end{itemize}
+  }
+  \only<2>{
+    Supervised anomaly detection:
+    \begin{itemize}
+    \item Training data: normal, abnormal
+    \item Train a classifier
+    \end{itemize}
+    
+    So reduced to existing problem of supervised classification.
+  }
+  \only<3>{
+    Unsupervised anomaly detection:
+    \begin{itemize}
+    \item Mostly, this is clustering
+    \item Increasingly, this is neural networks in advanced applications
+    \end{itemize}
+  }
+  \only<4>{
+    Applications:
+    \begin{itemize}
+    \item Intrusion detection (physical or electronic)
+    \item Fraud detection
+    \item Health monitoring (people, animals, machines)
+    \end{itemize}
+  }
+  \only<5>{
+    Techniques:
+    \begin{itemize}
+    \item Density: kNN, local outlier factor
+    \item SVM
+    \item Clustering: $k$-Means
+    \end{itemize}
+  }
+  \only<6>{
+    kNN techniques and variations
+    \begin{itemize}
+    \item Voronoi diagrams
+    \item aNN
+    \end{itemize}
+  }
+  \only<7>{
+    LOF
+    \begin{itemize}
+    \item Measure average density using kNN
+    \item Points with low local density are suspect outliers
+    \item There is no good thresholding technique
+    \end{itemize}
+  }
+  \only<8>{
+    $k$-Means
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Examples}
+  \only<1>{
+    \vphrase{ping times}
+  }
+  \only<2>{
+    \vphrase{httpd response times}
+  }
+  \only<3>{
+    \vphrase{single/multiple host access abuse (DOS/DDOS)}
+  }
+  \only<4>{
+    \vphrase{bank card fraud}
+  }
+  \only<5>{
+    \vphrase{spam}
+  }
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\talksection{Break}
+
+\begin{frame}
+  % https://www.pexels.com/photo/macro-shot-of-purple-flower-144282/
+  % https://static.pexels.com/photos/144282/pexels-photo-144282.jpeg
+  % CC0 license
+  \cimgwb{blue-flowers.jpg}
+  \vspace{-9cm}
+  \wphrase{questions?}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\talksection{Break}
+
+\end{document}
