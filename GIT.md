@@ -87,3 +87,7 @@ et SVM.
 
 [Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
 
+## Projets
+
+Format : [nom-du-groupe](git-du-groupe) members, du, groupe
+
