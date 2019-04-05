@@ -128,7 +128,7 @@ Format :
 
 Descriptif du projet (2-3 phrases).
 
-[GATA](https://github.com/Rock3f/ML-Projet-GATA)
+### [GATA](https://github.com/Rock3f/ML-Projet-GATA)
 * Guillaume Fourny
 * Alexandre Desvallées
 * Tanguy Badier
