@@ -51,3 +51,7 @@ Matthieu Saint-Martin
 Antoine Gosset
 
 ![Antoine Gosset](images/antoinegosset.jpg)
+
+Thomas Pichard
+
+![Thomas Pichard](images/thomaspichard.jpg)

@@ -1,4 +1,4 @@
-﻿# Git repos for ML at Ynov, Spring 2019.
+# Git repos for ML at Ynov, Spring 2019.
 
 Ajouter le liens à votre repo git avec texte qui vous identifie.
 Tenir en ordre lexicographique par nom.
@@ -48,3 +48,6 @@ Utiliser le jeu de données MovieLens pour créer un moteur de recommendation.
 [Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
 
 [Antoine Gosset](https://github.com/AntoineGOSSET/Machine-Learning)
+
+[Thomas Pichard](https://github.com/thomaspich/MachineLearning)
+
