@@ -1,4 +1,4 @@
-﻿# Git repos for ML at Ynov, Spring 2019.
+# Git repos for ML at Ynov, Spring 2019.
 
 Ajouter le liens à votre repo git avec texte qui vous identifie.
 Tenir en ordre lexicographique par nom.
@@ -85,7 +85,10 @@ et SVM.
 
 [Kevin Pautonnier](https://github.com/KevinPautonnier/MachineLearning.git)
 
+[Thomas Pichard](https://github.com/thomaspich/MachineLearning)
+
 [Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
+
 
 ## Projets
 
