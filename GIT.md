@@ -92,5 +92,38 @@ et SVM.
 
 ## Projets
 
-Format : [nom-du-groupe](git-du-groupe) members, du, groupe
+Pour le projet final, vous vous composerez en groupe de deux (minimum)
+à quatre (maximum) personnes afin de faire un projet que vous
+présenterez vendredi 4 mai lors de la dernière séance.  Vous pouvez
+travailler sur n'importe quel projet qui vous semble bon si le
+professeur est d'accord.  Le projet par défaut est de construire un
+système de reconnaissance de visage qui reconnaît les 18 personnes de
+le cours (y compris le prof).
 
+Lors de votre présentation, vous devez expliquer ce que vous avez
+fait, y compris son évolution.  Par exemple, vous devriez expliquer la
+première version du système, comment vous l'avez mesuré, et comment
+vous l'avez amélioré.
+
+Attention à ne pas vous laisser distraire par l'interface humaine.
+C'est une bonne idée, mais un projet qui maîtrise parfaitement le ML
+sans interface appréciable serait beaucoup mieux noté que le
+contraire.
+
+Le choix du projet doit être convenu avant la fin du week-end initial
+(7 avril) sauf dérogation explicite.  Dans les premiers jours vous
+devez créer un planning provisionnel de ce que vous compter faire (au
+moins par semaine) avec des points de progrès clairement défini tel
+que c'est possible d'évaluer s'ils sont achevés ou pas.
+
+Quand vous achevez les points importants de progrès ou quand vous
+auriez une question, vous devez créer un issue avec chacun dans
+l'équipe ainsi que le professeur tagés afin que nous puissions
+discuter votre progrès.
+
+
+Format : 
+
+* [nom-du-groupe](git-du-groupe) members, du, groupe
+
+Descriptif du projet (2-3 phrases).
