@@ -106,9 +106,8 @@ première version du système, comment vous l'avez mesuré, et comment
 vous l'avez amélioré.
 
 Attention à ne pas vous laisser distraire par l'interface humaine.
-C'est une bonne idée, mais un projet qui maîtrise parfaitement le ML
-sans interface appréciable serait beaucoup mieux noté que le
-contraire.
+Une IH est une bonne idée, mais un projet qui maîtrise parfaitement le
+ML sans UI appréciable serait beaucoup mieux noté que le contraire.
 
 Le choix du projet doit être convenu avant la fin du week-end initial
 (7 avril) sauf dérogation explicite.  Dans les premiers jours vous
@@ -121,12 +120,6 @@ auriez une question, vous devez créer un issue avec chacun dans
 l'équipe ainsi que le professeur tagés afin que nous puissions
 discuter votre progrès.
 
-
-Format : 
-
-* [nom-du-groupe](git-du-groupe) members, du, groupe
-
-Descriptif du projet (2-3 phrases).
 
 ### [GATA](https://github.com/Rock3f/ML-Projet-GATA)
 * Guillaume Fourny
