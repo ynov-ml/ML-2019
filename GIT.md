@@ -97,8 +97,8 @@ Pour le projet final, vous vous composerez en groupe de deux (minimum)
 présenterez vendredi 4 mai lors de la dernière séance.  Vous pouvez
 travailler sur n'importe quel projet qui vous semble bon si le
 professeur est d'accord.  Le projet par défaut est de construire un
-système de reconnaissance de visage qui reconnaît les 18 personnes de
-le cours (y compris le prof).
+système de reconnaissance de visage qui reconnaît les 18 personnes du
+cours (y compris le prof).
 
 Lors de votre présentation, vous devez expliquer ce que vous avez
 fait, y compris son évolution.  Par exemple, vous devriez expliquer la
