@@ -14,3 +14,4 @@ seaborn
 statsmodels
 surprise
 tornado
+plotly
