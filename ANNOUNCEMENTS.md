@@ -1,5 +1,13 @@
 # Annonces
 
+## [2019-04-15]
+
+Au lieu d'attendre à ce que je passe regarder votre code, pensez à
+créer des issues dans lesquelles vous me tagez.  Ainsi vous aurez un
+retour beaucoup plus rapide et, de mon côté, je saurai ce que vous
+pensez est prêt pour mes retours et évaluation.
+
+
 ## [2019-03-22]
 
 La fonction
