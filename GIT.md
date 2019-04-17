@@ -54,6 +54,16 @@ Refaire MNIST avec une random forest et avec SVM (+rbf).  Faire une
 comparaison des techniques : régression logistique (OvO, OvA), CART,
 et SVM.
 
+### CART, variation du 17 avril 2019
+
+*Répertoire : TP4_CART++*
+
+En cours le 17 avril 2019 nous allons regarder ensemble des jeux de
+données
+[ici](https://scikit-learn.org/stable/datasets/index.html#real-world-datasets).
+Si vous voulez, vous pouvez les télécharger avant de venir au cours.
+Vous le terminerez pour la semaine suivante.
+
 
 ## Étudiants
 
