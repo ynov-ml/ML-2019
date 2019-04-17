@@ -60,9 +60,14 @@ et SVM.
 
 En cours le 17 avril 2019 nous allons regarder ensemble des jeux de
 données
-[ici](https://scikit-learn.org/stable/datasets/index.html#real-world-datasets).
-Si vous voulez, vous pouvez les télécharger avant de venir au cours.
-Vous le terminerez pour la semaine suivante.
+[ici](https://scikit-learn.org/stable/datasets/index.html#real-world-datasets),
+avec objectif de faire la même exercice que proposé la semaine
+précédente.  Si vous voulez, vous pouvez télécharger avant de venir au
+cours.  Vous terminerez cet exercice pour la semaine suivante.
+
+En cours, nous nous diviserons en groupe de deux, et chaque groupe
+aura son propre jeu de données.  Pour la semaine prochaine, vous
+terminerez indépendemment.
 
 
 ## Étudiants
