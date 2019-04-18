@@ -154,3 +154,9 @@ Project aiming at creating a bot able to play a game the best way
 possible.  Using reinforcement learning, we will create an agent and
 make it learn our game.
 
+### [MYMETEO] (https://github.com/mcourant/mymeteo-ml)
+* Matthieu Saint-Martin
+* Thomas Pichard
+* Maxime Courant
+
+Init project my meteo, predict the weather for 1 week
