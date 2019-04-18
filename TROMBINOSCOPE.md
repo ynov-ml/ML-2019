@@ -55,3 +55,7 @@ Antoine Gosset
 Thomas Pichard
 
 ![Thomas Pichard](images/thomaspichard.jpg)
+
+Maxime Courant
+
+![Maxime Courant](images/MaximeCourant.jpg)
