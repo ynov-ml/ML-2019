@@ -104,6 +104,8 @@ terminerez indépendemment.
 
 [Matthieu Saint-Martin](https://github.com/msaintmartin/ml-exercises)
 
+[Maxime Courant](https://github.com/mcourant/ml-exo)
+
 
 ## Projets
 
