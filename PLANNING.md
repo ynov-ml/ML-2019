@@ -32,17 +32,19 @@
 * cours présentiel : 8h-12h
 * travail en groupe (non-présentiel) : 13h-17h
 
+## vendredi 19 avril
+* travail en groupe (non-présentiel) : 8h-12h
+* travail en groupe (non-présentiel) : 13h-17h
+
 ## jeudi 25 avril
 * cours présentiel : 13h-17h
 
 ## vendredi 26 avril
-* travail en groupe (non-présentiel) (?) : 8h-12h
+* travail en groupe (non-présentiel) : 8h-12h
 * travail en groupe (non-présentiel) : 13h-17h
 
 ## jeudi 2 mai
 * cours présentiel : 8h-12h
-* travail en groupe (non-présentiel) : 13h-17h
 
 ## vendredi 3 mai
-* cours présentiel : 8h-12h
-* présentations de projets finaux : 13h-17h
+* présentations de projets finaux : 8h-12h
