@@ -152,6 +152,14 @@ Project aiming at creating a bot able to play a game the best way
 possible. Using reinforcement learning, we will create an agent and
 make it learn our game.
 
+### [FLANBENT](https://github.com/Nair0fl/ML-PROJECT.git)
+* Antoine Drouard
+* Benoît Cochet
+* Clément Caillaud
+* Florian Boche
+
+Projet d'initiation à la reconnaissance faciale
+
 ### [NeuronalGates](https://github.com/Mokui/NeuronalGates)
 
 - Yanis
