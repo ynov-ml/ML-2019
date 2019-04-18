@@ -80,6 +80,8 @@ terminerez indépendemment.
 
 [Benoît Cochet](https://github.com/BenoitCochet/ML)
 
+[Maxime Courant](https://github.com/mcourant/ml-exo)
+
 [Yanis Dando](https://github.com/Mokui/code_ML)
 
 [Alexandre Desvallées](https://github.com/AlexDesvallees/Alex-ML)
