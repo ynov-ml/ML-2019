@@ -169,7 +169,7 @@ Projet d'initiation à la reconnaissance faciale
 
 Little project to create neurons. This neurons aim to learn something from themselves
 
-### [MYMETEO] (https://github.com/mcourant/mymeteo-ml)
+### [MYMETEO](https://github.com/mcourant/mymeteo-ml)
 * Matthieu Saint-Martin
 * Thomas Pichard
 * Maxime Courant
