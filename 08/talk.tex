@@ -1,0 +1,131 @@
+\input ../talk-header.tex
+\title
+{Machine Learning}
+\subtitle{Music, Time Series, }
+
+\begin{document}
+
+\talksection{Music}
+
+\begin{frame}
+  \cimghh{fourier-1.png}
+  \prevwork{\url{http://www.toptal.com/algorithms/shazam-it-music-processing-fingerprinting-and-recognition}}
+\end{frame}
+
+\begin{frame}
+  \cimghh{fourier-2.png}
+  \prevwork{\url{https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf}}
+\end{frame}
+
+\begin{frame}
+  \cimghh{fourier-hash.png}
+  \prevwork{\url{https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\talksection{Break}
+
+\talksection{Time Series}
+
+\begin{frame}
+  \frametitle{Introduction to time series}
+  \only<1>{
+    \purple{This is hard, but it depends on your goals.  And on context.}
+  }
+  \only<2>{
+    Definition (discrete time series):
+
+    \begin{displaymath}
+      \{s_t\mid t\in\mathbb{R}^+\wedge s\in\mathbb{R}\}
+    \end{displaymath}
+
+    \purple{(though $s$ in any vector space is fine)}
+  }
+  \only<3>{
+    Examples domains:
+    \begin{itemize}
+    \item Weather
+    \item Economics
+    \item Industry (e.g., factories)
+    \item Medicine
+    \item Web
+    \item Biological processes
+    \end{itemize}
+  }
+  \only<4>{
+    Why?
+    \begin{itemize}
+    \item Predict
+    \item Control
+    \item Understand
+    \item Describe
+    \end{itemize}
+  }
+  \only<5>{
+    Some strategies:
+    \begin{itemize}
+    \item Differencing:\\ \hspace{1cm}
+      $y_t' = y_t - y_{t-1}$ \\[2mm]
+    \item Second-order differencing: \\ \hspace{1cm}
+      $y_t'' = (y_t - y_{t-1}) - (y_{t-1} - y_{t-2}) = y_t - 2y_{t-1}
+      + y_{t-2}$
+    \end{itemize}
+  }
+  \only<6>{
+    Some strategies:
+    \begin{itemize}
+    \item Clustering
+    \item Hidden Markov Models (HMM)
+    \item Recurrent neural networks (RNN)
+    \item Autoregressive integrated moving average (ARIMA)
+      \begin{itemize}
+      \item Generalisation of autoregressive moving average (ARMA)
+        model
+      \item Regress on series' own lag
+      \end{itemize}
+
+    \end{itemize}
+  }
+  \only<7>{
+    One model:
+    \begin{displaymath}
+      s_t = g(t) + \phi_t
+    \end{displaymath}
+
+    where
+    \begin{itemize}
+    \item[] $g(t)$ is deterministic: signal (or trend)
+    \item[] $\phi_t$ is stochastic noise
+    \end{itemize}
+  }
+  \only<8>{
+    Variation types:
+    \begin{itemize}
+    \item Trend ($g$)
+    \item Seasonal effect ($g$)
+    \item Irregular fluctuation (residuals: $\phi$)
+    \end{itemize}
+  }
+  \only<9>{
+    \cimghh{decomposition.png}
+    \vspace{-8mm}
+    \prevwork{\url{http://www.ulb.ac.be/di/map/gbonte/ftp/time_ser.pdf}}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction to time series}
+
+  Some easy things to try
+  
+  \begin{itemize}
+  \item Introduce features to break out seasonality
+  \item Introduce lags as features
+  \item Some domain-specific transformation
+  \end{itemize}
+\end{frame}
+
+\talksection{Neural Networks}
+
+\end{document}
