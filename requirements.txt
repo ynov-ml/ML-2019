@@ -1,10 +1,10 @@
 ipython
 jinja2
 jsonschema
+numpy
 mahotas
 matplotlib
 notebook
-numpy
 pandas
 pyzmq
 scikit-image
