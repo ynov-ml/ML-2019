@@ -1,5 +1,12 @@
 # Annonces
 
+## [2019-04-26]
+
+Un rappel que la présentation, la qualité de la rédaction, la clarté
+et la précision des raisonnements entreront pour une part importante
+dans l'appréciation de votre travail final (projet et version finale
+des exercices).
+
 ## [2019-04-15]
 
 Au lieu d'attendre à ce que je passe regarder votre code, pensez à

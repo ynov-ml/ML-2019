@@ -68,6 +68,27 @@ En cours, nous nous diviserons en groupe de deux, et chaque groupe
 aura son propre jeu de données. Pour la semaine prochaine, vous
 terminerez indépendemment.
 
+### Perceptron
+
+Vous allez mettre en oeuvre un perceptron, dont vous vous servirez
+pour faire une reconnaissance de MNIST.  Vous pouvez utilisez des
+libraries comme numpy et scipy mais pas scikit-learn.  Si vous voulez
+tester votre travail, vous pouvez répéter le tout avec
+[`sklearn.linear_model.Perceptron`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Perceptron.html).
+
+Comme d'habitude, vous devez tester votre travail avec
+`train_test_split`.  Afin de ne pas fournir un résultat aberrant, il
+faut faire plusieurs `train_test_split`.  Vous pourriez trouver que
+[`cross_validate`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html)
+et
+[`cross_val_score`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html)
+intéressants.  Une discussion se trouve
+[ici](https://scikit-learn.org/stable/modules/cross_validation.html).
+
+Ajouter à votre tableau de comparaison de méthodes ce que vous aurez
+fait avec perceptron.
+
+
 ## Étudiants
 
 [Tanguy Badier](https://github.com/Rock3f/Exercice-Machine-Learning)
