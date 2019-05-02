@@ -88,6 +88,26 @@ intéressants.  Une discussion se trouve
 Ajouter à votre tableau de comparaison de méthodes ce que vous aurez
 fait avec perceptron.
 
+### MLP et RNN
+
+Pour la dernière séance, mettez en oeuvre un MLP et un RNN pour MNIST.
+Afin que cela soit plutôt raisonnable, voilà quelques codelabs avec le
+code quasiment complet :
+
+* [MLP](https://github.com/keras-team/keras/blob/master/examples/mnist_mlp.py)
+* [CNN](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py)
+
+Pour un peu plus de détail, il existe ce
+[codelab](https://www.tensorflow.org/tutorials/estimators/cnn) et
+[ipynb sur
+git](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/estimators/cnn.ipynb).
+
+Afin d'apprécier la simplification que propose Keras, regardez
+également les [mêmes exercices en
+TensorFlow](https://github.com/aymericdamien/TensorFlow-Examples) :
+[MLP](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/neural_network_raw.ipynb)
+et [CNN](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/convolutional_network.ipynb).
+
 
 ## Étudiants
 
