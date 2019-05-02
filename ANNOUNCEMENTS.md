@@ -1,11 +1,30 @@
 # Annonces
 
+## [2019-05-02]
+
+### Présentations
+
+Vous devez cibler de 20 à 30 minutes pour vos présentions.  Chacun
+doit contribuer.  Chacun présent aura la possibilité de poser des
+questions.
+
+### Exercices
+
+Vous comprenez mieux les exercices du début du cours.  N'hésitez pas à
+les améliorer.  En particulier, il faut s'attendre à ce que le prof va
+les tester lors de la notation.
+
+N'oubliez pas de faire un résumé des plusieurs algorithmes que nous
+avons utilisé pour classifié MNIST.
+
+
 ## [2019-04-26]
 
 Un rappel que la présentation, la qualité de la rédaction, la clarté
 et la précision des raisonnements entreront pour une part importante
 dans l'appréciation de votre travail final (projet et version finale
 des exercices).
+
 
 ## [2019-04-15]
 
