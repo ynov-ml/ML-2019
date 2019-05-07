@@ -1,5 +1,12 @@
 # Annonces
 
+## [2019-05-07]
+
+Pull fait.  Voilà une visualisation de vos commits pour le fun :
+
+![commits](commits.png)
+
+
 ## [2019-05-02]
 
 ### Présentations

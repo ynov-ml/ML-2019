@@ -16,3 +16,5 @@ surprise
 tornado
 plotly
 Keras
+GitPython
+pylint
